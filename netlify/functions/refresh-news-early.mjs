@@ -12,6 +12,9 @@ export default async (request) => {
       ok: true,
       slot: result.edition.slot,
       articles: result.edition.articles.length,
+      persisted: result.persisted,
+      storage: result.storage,
+      lastUpdated: result.lastUpdated,
       commit: result.commit,
     });
   } catch (error) {

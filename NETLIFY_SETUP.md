@@ -3,6 +3,8 @@
 ## What is already prepared
 
 - Netlify Scheduled Functions are in `netlify/functions`.
+- Fresh generated news is persisted in Netlify Blobs.
+- The frontend reads `/.netlify/functions/latest-news` and falls back to `data/news.json`.
 - Static build output is generated into `dist`.
 - The schedule targets Budapest local time:
   - 04:25
@@ -12,24 +14,22 @@
 
 ## What still requires account access
 
-1. Put this project in a GitHub repository.
-2. Connect that repository to a Netlify site.
-3. Set these Netlify environment variables with Functions scope:
+1. Log in to Netlify CLI.
+2. Create or link a Netlify site.
+3. Deploy:
 
 ```text
-NEWS_GITHUB_REPO=owner/repo
-NEWS_GITHUB_TOKEN=github_token_with_contents_read_write
-NEWS_GITHUB_BRANCH=main
-NEWS_DATA_PATH=data/news.json
+netlify deploy --prod
 ```
 
-4. Deploy the Netlify site.
-5. Test:
+4. Test:
 
 ```text
 https://your-site.netlify.app/.netlify/functions/preview-news
 https://your-site.netlify.app/.netlify/functions/refresh-news-day?force=1
+https://your-site.netlify.app/.netlify/functions/latest-news
 ```
 
-The preview endpoint generates news without committing. The forced refresh endpoint commits
-`data/news.json` through GitHub, so it needs the token to be configured first.
+The preview endpoint generates news without saving it. The forced refresh endpoint
+saves the latest edition to Netlify Blobs. The latest-news endpoint serves the
+saved Blob data to the frontend.

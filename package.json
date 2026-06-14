@@ -7,5 +7,8 @@
     "build": "node scripts/build-static.mjs",
     "preview": "python -m http.server 8000",
     "netlify:preview-news": "netlify functions:invoke preview-news"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9"
   }
 }

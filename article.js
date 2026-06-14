@@ -1,5 +1,7 @@
 ﻿const DATA_URL = "data/news.json";
 
+const NETLIFY_DATA_URL = "/.netlify/functions/latest-news";
+
 function formatDate(value) {
   if (!value) return "-";
   return new Intl.DateTimeFormat("en-US", {
@@ -86,7 +88,10 @@ function renderArticle(article, articles) {
 
 async function main() {
   const id = new URLSearchParams(window.location.search).get("id");
-  const response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  let response = await fetch(`${NETLIFY_DATA_URL}?t=${Date.now()}`);
+  if (!response.ok) {
+    response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  }
   const data = await response.json();
   const currentEdition = data.editions.find((edition) => edition.articles.some((item) => item.id === id)) || data.editions[0];
   const articles = currentEdition?.articles || [];

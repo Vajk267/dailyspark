@@ -25,6 +25,7 @@ A Netlify-os frissites a `netlify/functions` mappaban van.
 - `refresh-news-early.mjs`: hajnali frissites, 04:25 Europe/Budapest ido szerint.
 - `refresh-news-day.mjs`: napi frissitesek, 08:00, 14:00 es 20:00 Europe/Budapest ido szerint.
 - `preview-news.mjs`: kezi probahivas, nem irja at a repot.
+- `latest-news.mjs`: az oldal altal olvasott aktualis hiradat.
 
 A Netlify cron UTC-ben fut, ezert a functionok tobb UTC idopontban ebrednek,
 majd belul ellenorzik, hogy Budapest szerint tenyleg a kert idopont van-e. Igy
@@ -34,23 +35,12 @@ A Netlify build a `scripts/build-static.mjs` scriptet futtatja, es csak a
 statikus oldalhoz szukseges fajlokat masolja a `dist` mappaba. Igy a function
 forrasfajlok nem kerulnek ki statikus publikus fajlkent.
 
-### Szukseges Netlify kornyezeti valtozok
+### Adattarolas
 
-A deployolt Netlify function nem tud tartosan fajlt irni a sajat futasi
-kornyezetebe. Ezert a frissites a GitHub API-n keresztul commitolja az uj
-`data/news.json` fajlt, ami elinditja a kovetkezo Netlify deployt.
-
-Allitsd be ezeket a Netlify UI-ban, Functions scope-pal:
-
-```text
-NEWS_GITHUB_REPO=owner/repo
-NEWS_GITHUB_TOKEN=github_token_contents_read_write_joggal
-NEWS_GITHUB_BRANCH=main
-NEWS_DATA_PATH=data/news.json
-```
-
-A `NEWS_GITHUB_BRANCH` es `NEWS_DATA_PATH` opcionalis, ha `main` branchon es
-`data/news.json` utvonalon hasznalod.
+A friss hirek Netlify Blobs tarhelyre kerulnek. Az oldal eloszor a
+`/.netlify/functions/latest-news` endpointot olvassa, helyi fejlesztesnel pedig
+visszaesik a statikus `data/news.json` fajlra. Ehhez nincs szukseg GitHub
+tokenre.
 
 ### Kezi teszt Netlify-on
 
@@ -60,7 +50,7 @@ Preview, commit nelkul:
 https://your-site.netlify.app/.netlify/functions/preview-news
 ```
 
-Kenyszeritett eles frissites, GitHub commit-tal:
+Kenyszeritett eles frissites:
 
 ```text
 https://your-site.netlify.app/.netlify/functions/refresh-news-day?force=1

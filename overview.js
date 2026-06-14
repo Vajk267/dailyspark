@@ -1,4 +1,5 @@
-const DATA_URL = "data/news.json";
+const DATA_URL = "/.netlify/functions/latest-news";
+const STATIC_DATA_URL = "data/news.json";
 
 function renderOverview(overview) {
   document.querySelector("#overviewTitle").textContent = overview.title || "AI overview";
@@ -27,7 +28,10 @@ function renderOverview(overview) {
 }
 
 async function main() {
-  const response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  let response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  if (!response.ok) {
+    response = await fetch(`${STATIC_DATA_URL}?t=${Date.now()}`);
+  }
   const data = await response.json();
   const overview = data.editions?.[0]?.overview || {
     title: "AI overview",

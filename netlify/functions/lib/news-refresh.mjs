@@ -1,4 +1,8 @@
+import { getStore } from "@netlify/blobs";
+
 const DATA_PATH = "data/news.json";
+const BLOB_STORE = "dailyspark-news";
+const BLOB_KEY = "news.json";
 const MAX_EDITIONS = 14;
 const STORIES_PER_EDITION = 10;
 const SOURCE_LIMIT_PER_STORY = 3;
@@ -368,6 +372,19 @@ function buildData(existingData, edition) {
   };
 }
 
+async function readBlobData() {
+  const store = getStore({ name: BLOB_STORE, consistency: "strong" });
+  const data = await store.get(BLOB_KEY, { consistency: "strong", type: "json" });
+  return data || null;
+}
+
+async function writeBlobData(data) {
+  const store = getStore({ name: BLOB_STORE, consistency: "strong" });
+  await store.setJSON(BLOB_KEY, data, {
+    metadata: { lastUpdated: data.lastUpdated },
+  });
+}
+
 async function buildEdition(slot) {
   const generatedAt = new Date();
   const { articles, errors } = await collectArticles();
@@ -450,15 +467,55 @@ export async function runNewsRefresh({ slot = "morning", persist = true } = {}) 
     return { edition, persisted: false };
   }
 
-  const config = githubConfig();
-  const existing = await readExistingData(config);
-  const data = buildData(existing.data, edition);
-  const commit = await commitData(config, data, existing.sha);
+  if (process.env.NEWS_STORAGE === "github") {
+    const config = githubConfig();
+    const existing = await readExistingData(config);
+    const data = buildData(existing.data, edition);
+    const commit = await commitData(config, data, existing.sha);
+
+    return {
+      edition,
+      persisted: true,
+      storage: "github",
+      commit: commit.commit?.html_url || commit.content?.html_url || null,
+    };
+  }
+
+  const existingData = await readBlobData();
+  const data = buildData(existingData, edition);
+  await writeBlobData(data);
 
   return {
     edition,
     persisted: true,
-    commit: commit.commit?.html_url || commit.content?.html_url || null,
+    storage: "blob",
+    lastUpdated: data.lastUpdated,
+  };
+}
+
+export async function readLatestNews(fallbackUrl) {
+  const blobData = await readBlobData();
+  if (blobData) return { data: blobData, source: "blob" };
+
+  if (fallbackUrl) {
+    const response = await fetch(fallbackUrl);
+    if (response.ok) {
+      return { data: await response.json(), source: "static" };
+    }
+  }
+
+  return {
+    source: "empty",
+    data: {
+      site: "DailySpark",
+      lastUpdated: null,
+      sources: FEEDS,
+      editions: [],
+      engine: {
+        mode: "netlify-scheduled-source-synthesis",
+        note: "No generated edition is available yet.",
+      },
+    },
   };
 }
 
@@ -485,9 +542,9 @@ export function isAnyBudapestTime(times, date = new Date()) {
   return times.some(([hour, minute]) => isBudapestTime(hour, minute, date));
 }
 
-export function jsonResponse(body, status = 200) {
+export function jsonResponse(body, status = 200, headers = {}) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
-    headers: { "content-type": "application/json; charset=utf-8" },
+    headers: { "content-type": "application/json; charset=utf-8", ...headers },
   });
 }

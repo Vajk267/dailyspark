@@ -1,4 +1,5 @@
 dist/
+node_modules/
 *.zip
 scripts/__pycache__/
 *.pyc

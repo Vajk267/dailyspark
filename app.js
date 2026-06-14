@@ -1,4 +1,5 @@
-const DATA_URL = "data/news.json";
+const DATA_URL = "/.netlify/functions/latest-news";
+const STATIC_DATA_URL = "data/news.json";
 
 const state = {
   data: null,
@@ -234,7 +235,10 @@ function render() {
 
 async function loadData() {
   els.lastUpdated.textContent = "Loading...";
-  const response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  let response = await fetch(`${DATA_URL}?t=${Date.now()}`);
+  if (!response.ok) {
+    response = await fetch(`${STATIC_DATA_URL}?t=${Date.now()}`);
+  }
   if (!response.ok) throw new Error(`Could not load data: ${response.status}`);
   state.data = await response.json();
   state.editionIndex = 0;
