@@ -23,7 +23,6 @@ from typing import Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "news.json"
-MAX_EDITIONS = 14
 STORIES_PER_EDITION = 10
 SOURCE_LIMIT_PER_STORY = 3
 
@@ -448,7 +447,8 @@ def source_excerpt(article: SourceArticle) -> str:
 def make_story_id(slot: str, seed: SourceArticle, generated: datetime, index: int) -> str:
     digest = hashlib.sha1(f"{slot}|{generated.date()}|{index}|{seed.url}".encode("utf-8")).hexdigest()[:10]
     slug = re.sub(r"[^a-z0-9]+", "-", seed.title.lower())[:42].strip("-")
-    return f"{generated.date().isoformat()}-{slot}-{index + 1}-{slug}-{digest}"
+    time = generated.strftime("%H%M%S")
+    return f"{generated.date().isoformat()}-{slot}-{time}-{index + 1}-{slug}-{digest}"
 
 
 def mostly_english(value: str) -> bool:
@@ -610,7 +610,7 @@ def build_edition(slot: str, allow_fallback: bool) -> tuple[dict, list[str]]:
         stories.append(compose_story(enriched_cluster[0], enriched_cluster, generated, slot, index))
     overview = build_overview(stories, generated)
 
-    edition_id = f"{generated.date().isoformat()}-{slot}"
+    edition_id = f"{generated.date().isoformat()}-{slot}-{generated.strftime('%H%M%S')}"
     return (
         {
             "id": edition_id,
@@ -634,12 +634,12 @@ def save_edition(edition: dict) -> dict:
     data["sources"] = FEEDS
     data["engine"] = {
         "mode": "source-synthesis",
-        "note": "English stories assembled from RSS feeds and available source-page context.",
+        "note": "English stories assembled from RSS feeds and available source-page context. Older editions are retained as an archive.",
     }
 
     editions = [item for item in data.get("editions", []) if item.get("id") != edition["id"]]
     editions.insert(0, edition)
-    data["editions"] = editions[:MAX_EDITIONS]
+    data["editions"] = editions
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     with DATA_PATH.open("w", encoding="utf-8") as file:

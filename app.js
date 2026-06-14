@@ -3,7 +3,7 @@ const STATIC_DATA_URL = "data/news.json";
 
 const state = {
   data: null,
-  editionIndex: 0,
+  editionIndex: -1,
   category: "All",
 };
 
@@ -46,10 +46,32 @@ function articleUrl(article) {
 }
 
 function currentEdition() {
+  if (state.editionIndex < 0) return null;
   return state.data?.editions?.[state.editionIndex] || null;
 }
 
+function storyKey(article) {
+  const sourceUrl = article.sources?.[0]?.url || "";
+  if (sourceUrl) return sourceUrl.replace(/[?#].*$/, "").toLowerCase();
+  return (article.title || article.id || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+function allSavedArticles() {
+  const seen = new Set();
+  const articles = [];
+  (state.data?.editions || []).forEach((edition) => {
+    (edition.articles || []).forEach((article) => {
+      const key = storyKey(article);
+      if (seen.has(key)) return;
+      seen.add(key);
+      articles.push(article);
+    });
+  });
+  return articles;
+}
+
 function allCurrentArticles() {
+  if (state.editionIndex < 0) return allSavedArticles();
   return currentEdition()?.articles || [];
 }
 
@@ -69,6 +91,18 @@ function setCategory(topic, { scroll = false } = {}) {
 
 function renderTabs() {
   els.editionTabs.replaceChildren();
+  const allButton = document.createElement("button");
+  allButton.className = "tab-button";
+  allButton.type = "button";
+  allButton.setAttribute("aria-selected", String(state.editionIndex < 0));
+  allButton.textContent = `All updates | ${allSavedArticles().length} stories`;
+  allButton.addEventListener("click", () => {
+    state.editionIndex = -1;
+    state.category = "All";
+    render();
+  });
+  els.editionTabs.append(allButton);
+
   state.data.editions.forEach((edition, index) => {
     const button = document.createElement("button");
     button.className = "tab-button";
@@ -217,7 +251,7 @@ function renderArticles() {
   if (!articles.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = "No stories are available for this filter in the current edition.";
+    empty.textContent = "No stories are available for this filter yet.";
     els.leadGrid.append(empty);
     return;
   }
@@ -257,7 +291,7 @@ function renderTicker() {
 function render() {
   const edition = currentEdition();
   els.lastUpdated.textContent = formatDate(state.data.lastUpdated);
-  els.editionTitle.textContent = edition ? edition.label : "-";
+  els.editionTitle.textContent = edition ? edition.label : "All saved updates";
   els.articleCount.textContent = String(currentArticles().length);
   els.engineMode.textContent = "Editor overview";
   renderTabs();
@@ -277,7 +311,7 @@ async function loadData() {
   }
   if (!response.ok) throw new Error(`Could not load data: ${response.status}`);
   state.data = await response.json();
-  state.editionIndex = 0;
+  state.editionIndex = -1;
   state.category = "All";
   render();
 }
