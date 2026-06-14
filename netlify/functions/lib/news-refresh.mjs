@@ -42,6 +42,14 @@ const INTEREST_TERMS = new Set([
   "strike", "technology", "trump", "ukraine", "war",
 ]);
 
+const NOISE_PHRASES = [
+  "advertisement", "all rights reserved", "browser notifications", "click here",
+  "close dialogue", "cookie", "email link", "follow live", "jump to content",
+  "key events", "live coverage", "newsletter", "prefer the guardian on google",
+  "print subscriptions", "privacy notice", "share on", "sign in", "sign up",
+  "skip to key events", "terms and conditions", "toggle caption",
+];
+
 function iso(date = new Date()) {
   return date.toISOString();
 }
@@ -179,6 +187,25 @@ async function collectArticles() {
   return { articles: dedupeArticles(articles), errors };
 }
 
+function extractArticleBody(html) {
+  const paragraphs = [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((match) => cleanText(match[1], 900))
+    .filter((paragraph) => paragraph.length > 55)
+    .filter((paragraph) => !NOISE_PHRASES.some((term) => paragraph.toLowerCase().includes(term)));
+  return cleanText(paragraphs.slice(0, 8).join(" "), 2600);
+}
+
+async function enrichArticle(article) {
+  try {
+    const html = await fetchText(article.url, 9000);
+    const body = extractArticleBody(html);
+    if (!body) return article;
+    return { ...article, body };
+  } catch {
+    return article;
+  }
+}
+
 function keywords(text) {
   return new Set(
     text
@@ -262,6 +289,32 @@ function clusterFor(seed, articles) {
   ];
 }
 
+function sentencePool(article, limit = 6) {
+  const text = cleanText(`${article.summary || ""} ${article.body || ""}`, 3200);
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  const useful = [];
+
+  for (const rawSentence of sentences) {
+    const sentence = cleanText(rawSentence, 360);
+    const lowered = sentence.toLowerCase();
+    if (sentence.length < 45) continue;
+    if (NOISE_PHRASES.some((term) => lowered.includes(term))) continue;
+    if (/^\d+[hm]\s+ago\b/i.test(sentence)) continue;
+    if (/\b(mail us|comment btl|view image in fullscreen)\b/i.test(sentence)) continue;
+    if (!useful.includes(sentence)) useful.push(sentence);
+    if (useful.length >= limit) break;
+  }
+
+  return useful;
+}
+
+function readableSources(cluster) {
+  const names = [...new Set(cluster.map((article) => article.source))];
+  if (names.length === 1) return names[0];
+  if (names.length === 2) return `${names[0]} and ${names[1]}`;
+  return `${names.slice(0, -1).join(", ")}, and ${names.at(-1)}`;
+}
+
 function slotLabel(slot) {
   if (slot === "morning") return "Morning edition";
   if (slot === "evening") return "Evening edition";
@@ -286,47 +339,104 @@ function storyId(slot, article, index, generatedAt) {
   return `${date}-${slot}-${index + 1}-${slugify(article.title)}-${hash}`;
 }
 
-function whyInteresting(article) {
+function headlineCore(article) {
+  return article.title
+    .replace(/\s+-\s+live\b.*$/i, "")
+    .replace(/\s+\|\s+.*$/i, "")
+    .replace(/\s+from multiple sources$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function whyInteresting(article, sourceCount = 1) {
+  const sourceNote = sourceCount > 1 ? " Several outlets are now circling the same development, which makes the follow-up more useful than a single alert." : "";
   const byTopic = {
-    World: "The story may carry international consequences or affect more than one region.",
-    Business: "The story is worth watching for its market, consumer, or regulatory impact.",
-    Technology: "The story may influence technology, business, or privacy decisions.",
-    Science: "The story may add evidence, risk, or practical consequences to a developing issue.",
-    Sport: "The story may shift results, selection, injury news, or the wider competition picture.",
-    Culture: "The story may shape audience reaction, institutional decisions, or public debate.",
+    World: "The important part is not only what happened, but who reacts next: governments, negotiators, courts, or people directly affected.",
+    Business: "The story is worth watching because the first report can quickly turn into a market, consumer, jobs, or regulatory issue.",
+    Technology: "The practical question is whether this changes how companies, users, regulators, or developers behave after the first announcement.",
+    Science: "The useful follow-up is evidence: whether the finding is confirmed, challenged, or translated into decisions people can actually see.",
+    Sport: "The result matters most if it changes the next fixture, selection, injury picture, or the shape of the wider competition.",
+    Culture: "The cultural angle is usually in the reaction: audiences, institutions, critics, and the people whose work is being discussed.",
   };
-  return byTopic[article.topic] || "The topic may bring further reaction and follow-up reporting.";
+  return `${byTopic[article.topic] || "The topic may bring further reaction, confirmation, and practical consequences."}${sourceNote}`;
+}
+
+function makeSummary(seed) {
+  const fact = sentencePool(seed, 1)[0];
+  if (fact) return cleanText(fact, 300);
+  return cleanText(`${headlineCore(seed)} is developing, with source links preserved below for readers who want the original reporting.`, 300);
+}
+
+function detailParagraphs(seed, cluster) {
+  const facts = [];
+  for (const article of cluster) {
+    for (const sentence of sentencePool(article, 5)) {
+      if (!facts.includes(sentence)) facts.push(sentence);
+    }
+  }
+
+  const lead = facts[0] || makeSummary(seed);
+  const paragraphs = [
+    lead,
+  ];
+
+  if (facts.length >= 3) {
+    paragraphs.push(`${facts[1]} ${facts[2]}`);
+  } else if (facts.length === 2) {
+    paragraphs.push(`${facts[1]} For now, the strongest version of the story is still the first reported account, so later updates matter.`);
+  } else {
+    paragraphs.push("The available detail is still limited, so the useful thing is to separate the confirmed facts from the parts that may change as more reporting arrives.");
+  }
+
+  if (facts.length >= 5) {
+    paragraphs.push(`${facts[3]} ${facts[4]}`);
+  } else {
+    paragraphs.push(`The broader context is the ${seed.topic.toLowerCase()} desk: this kind of story often changes once officials, companies, teams, or institutions respond.`);
+  }
+
+  paragraphs.push(whyInteresting(seed, cluster.length));
+  paragraphs.push("What to watch next: confirmation from the people directly involved, any correction to the first account, and the practical consequences that follow once the headline moves on.");
+
+  return paragraphs.map((paragraph) => cleanText(paragraph, 520));
+}
+
+function makeTakeaways(seed, cluster) {
+  const facts = [];
+  for (const article of cluster) {
+    for (const sentence of sentencePool(article, 3)) {
+      if (!facts.includes(sentence)) facts.push(sentence);
+    }
+  }
+
+  const fallbacks = [
+    headlineCore(seed),
+    "The strongest next update would add confirmation or a named response.",
+    "The source links below are kept so the original reporting can be checked directly.",
+  ];
+
+  return [0, 1, 2].map((index) => cleanText(facts[index] || fallbacks[index], 180));
 }
 
 function composeStory(seed, cluster, generatedAt, slot, index) {
   const id = storyId(slot, seed, index, generatedAt);
-  const summary = seed.summary || `A fresh ${seed.topic.toLowerCase()} story from ${seed.source}.`;
-  const sourceNames = [...new Set(cluster.map((article) => article.source))];
-  const sourceLine = sourceNames.length > 1 ? `Based on reporting from ${sourceNames.join(", ")}.` : `Based on reporting from ${seed.source}.`;
+  const summary = makeSummary(seed);
+  const body = detailParagraphs(seed, cluster);
 
   return {
     id,
-    title: `${seed.topic}: ${seed.title}`,
-    subtitle: "What happened, why it matters, and what to watch next.",
+    title: headlineCore(seed),
+    subtitle: "What is known so far, and what still needs confirmation.",
     url: `article.html?id=${id}`,
     source: "DailySpark newsroom",
     topic: seed.topic,
     publishedAt: iso(generatedAt),
     updatedAt: iso(generatedAt),
     summary,
-    body: [
-      `${sourceLine} ${summary}`,
-      `Why it matters: ${whyInteresting(seed)}`,
-      "The next updates to watch are official responses, confirmation from more than one source, and any practical consequence.",
-    ],
-    takeaways: [
-      cleanText(seed.title, 160),
-      cleanText(summary, 180),
-      whyInteresting(seed),
-    ],
+    body,
+    takeaways: makeTakeaways(seed, cluster),
     image: cluster.find((article) => article.image)?.image || "",
     color: seed.color,
-    readingMinutes: 2,
+    readingMinutes: Math.max(3, Math.round(body.join(" ").split(/\s+/).length / 180)),
     sourceCount: cluster.length,
     sources: cluster.map((article) => ({
       title: article.title,
@@ -341,7 +451,7 @@ function composeStory(seed, cluster, generatedAt, slot, index) {
 function buildOverview(stories, generatedAt) {
   const topics = [...new Set(stories.map((story) => story.topic))];
   return {
-    title: "AI overview",
+    title: "Editor overview",
     subtitle: "A guided snapshot of the current edition.",
     generatedAt: iso(generatedAt),
     summary: `This edition selected ${stories.length} leading stories. Main areas: ${topics.join(", ")}.`,
@@ -349,7 +459,7 @@ function buildOverview(stories, generatedAt) {
       "Collecting fresh RSS signals from trusted publishers.",
       "Removing duplicate or weak story candidates.",
       "Ranking the strongest stories by recency and public interest.",
-      "Writing English story summaries with source links preserved.",
+      "Writing source-led story briefs with links preserved.",
     ],
     highlights: stories.slice(0, 4).map((story) => story.title),
     url: "overview.html",
@@ -393,7 +503,12 @@ async function buildEdition(slot) {
   }
 
   const seeds = chooseSeeds(articles);
-  const stories = seeds.map((seed, index) => composeStory(seed, clusterFor(seed, articles), generatedAt, slot, index));
+  const stories = await Promise.all(
+    seeds.map(async (seed, index) => {
+      const cluster = await Promise.all(clusterFor(seed, articles).map((article) => enrichArticle(article)));
+      return composeStory(cluster[0], cluster, generatedAt, slot, index);
+    })
+  );
   return {
     id: `${generatedAt.toISOString().slice(0, 10)}-${slot}`,
     slot,

@@ -2,7 +2,7 @@ const DATA_URL = "/.netlify/functions/latest-news";
 const STATIC_DATA_URL = "data/news.json";
 
 function renderOverview(overview) {
-  document.querySelector("#overviewTitle").textContent = overview.title || "AI overview";
+  document.querySelector("#overviewTitle").textContent = overview.title || "Editor overview";
   document.querySelector("#overviewSummary").textContent = overview.summary || overview.subtitle || "";
 
   const steps = document.querySelector("#overviewSteps");
@@ -34,7 +34,7 @@ async function main() {
   }
   const data = await response.json();
   const overview = data.editions?.[0]?.overview || {
-    title: "AI overview",
+    title: "Editor overview",
     summary: "No overview is available yet.",
     steps: [],
     highlights: [],

@@ -224,7 +224,7 @@ function render() {
   els.lastUpdated.textContent = formatDate(state.data.lastUpdated);
   els.editionTitle.textContent = edition ? edition.label : "-";
   els.articleCount.textContent = String(currentArticles().length);
-  els.engineMode.textContent = "AI overview";
+  els.engineMode.textContent = "Editor overview";
   renderTabs();
   renderFilters();
   renderTicker();

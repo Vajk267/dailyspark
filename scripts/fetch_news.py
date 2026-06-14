@@ -346,97 +346,95 @@ def make_summary(title: str, seed: SourceArticle) -> str:
     if facts:
         return clean_text(facts[0], 300)
     return (
-        f"The latest {seed.topic.lower()} story centers on {headline_core(seed).lower()}, "
-        "with the original reporting linked below for readers who want the full trail."
+        f"{headline_core(seed)} is developing, with the original reporting linked below "
+        "for readers who want the full trail."
     )
 
 
 def topic_context(topic: str) -> str:
     contexts = {
         "Business": (
-            "For readers following markets and companies, the important question is whether the first report turns into "
-            "a broader financial, regulatory, or consumer story."
+            "The story is worth watching because the first report can quickly turn into a market, consumer, jobs, "
+            "or regulatory issue."
         ),
         "Technology": (
-            "For readers following technology, the important question is whether the first report changes how companies, "
-            "users, regulators, or developers behave next."
+            "The practical question is whether this changes how companies, users, regulators, or developers behave "
+            "after the first announcement."
         ),
         "Sport": (
-            "For readers following sport, the important question is how the result, selection, injury news, or performance "
-            "changes the next fixture and the wider competition picture."
+            "The result matters most if it changes the next fixture, selection, injury picture, or the shape of the "
+            "wider competition."
         ),
         "Science": (
-            "For readers following science, the important question is whether the finding, warning, or field report is "
-            "confirmed by more evidence and translated into practical decisions."
+            "The useful follow-up is evidence: whether the finding is confirmed, challenged, or translated into "
+            "decisions people can actually see."
         ),
         "Culture": (
-            "For readers following culture, the important question is how the story changes public attention, audience "
-            "reaction, and the next stage of the work or event."
+            "The cultural angle is usually in the reaction: audiences, institutions, critics, and the people whose "
+            "work is being discussed."
         ),
         "Hungary": (
-            "For readers following Hungary, the important question is whether the first details lead to a public response, "
-            "a political consequence, or a practical change for the people affected."
+            "The important part is whether the first details lead to a public response, a political consequence, "
+            "or a practical change for the people affected."
         ),
     }
     return contexts.get(
         topic,
-        "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+        "The important part is not only what happened, but who reacts next and whether the first version holds up.",
     )
 
 
 def detail_paragraphs(seed: SourceArticle, cluster: list[SourceArticle], title: str) -> list[str]:
     lead_fact = make_summary(title, seed)
-    paragraphs = [
-        (
-            f"The story centers on {headline_core(seed).lower()}. "
-            f"The central point from the latest reporting is this: {lead_fact}"
-        )
-    ]
-
     collected: list[str] = []
     for article in cluster:
-        for sentence in sentence_pool(article, 4):
+        for sentence in sentence_pool(article, 5):
             if sentence not in collected:
                 collected.append(sentence)
 
+    paragraphs = [
+        lead_fact
+    ]
+
     if collected:
-        paragraphs.append(
-            "The immediate detail is more concrete. "
-            + " ".join(collected[:3])
-        )
+        detail = " ".join(collected[1:3] if collected[0] == lead_fact else collected[:2])
+        if detail:
+            paragraphs.append(detail)
     else:
         paragraphs.append(
-            f"The available detail is still thin, but the item is current enough to lead the {seed.topic.lower()} desk. "
-            "Later updates should clarify the sequence, the people involved, and the practical effect."
+            "The available detail is still limited, so the useful thing is to separate the confirmed facts "
+            "from the parts that may change as more reporting arrives."
         )
 
-    if len(collected) > 3:
-        paragraphs.append(
-            "The surrounding context matters because it shows where the story may move next. "
-            + " ".join(collected[3:6])
-        )
+    if len(collected) > 4:
+        paragraphs.append(" ".join(collected[3:5]))
     else:
         paragraphs.append(
-            "The next thing to watch is whether later updates add confirmation, reaction, or practical consequences."
+            f"The broader context is the {seed.topic.lower()} desk: this kind of story often changes once officials, "
+            "companies, teams, or institutions respond."
         )
 
     paragraphs.append(topic_context(seed.topic))
 
     paragraphs.append(
-        "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story "
-        "respond, and whether the first details hold once the next round of reporting arrives."
+        "What to watch next: confirmation from the people directly involved, any correction to the first account, "
+        "and the practical consequences that follow once the headline moves on."
     )
-    return paragraphs
+    return [clean_text(paragraph, 520) for paragraph in paragraphs]
 
 
 def make_takeaways(seed: SourceArticle, cluster: list[SourceArticle]) -> list[str]:
-    facts = sentence_pool(seed, 3)
+    facts: list[str] = []
+    for article in cluster:
+        for sentence in sentence_pool(article, 3):
+            if sentence not in facts:
+                facts.append(sentence)
     points = [clean_text(sentence, 180) for sentence in facts[:3]]
     while len(points) < 3:
         fallback = [
-            f"The story is part of the {seed.topic} desk.",
-            "The central facts may develop as publishers update their reporting.",
-            "Further updates may add reaction, confirmation, or practical consequences.",
+            headline_core(seed),
+            "The strongest next update would add confirmation or a named response.",
+            "The source links below are kept so the original reporting can be checked directly.",
         ][len(points)]
         points.append(fallback)
     return points[:3]
@@ -479,10 +477,7 @@ def headline_core(seed: SourceArticle) -> str:
 
 
 def editorial_title(seed: SourceArticle, cluster: list[SourceArticle]) -> str:
-    core = headline_core(seed)
-    if len(cluster) > 1:
-        return f"{seed.topic}: {core} from multiple sources"
-    return f"{seed.topic}: {core}"
+    return headline_core(seed)
 
 
 def english_source_note(article: SourceArticle) -> str:
@@ -500,7 +495,7 @@ def build_overview(stories: list[dict], generated: datetime) -> dict:
     source_count = sum(story.get("sourceCount", 0) for story in stories)
     lead_topics = ", ".join(topics[:5])
     return {
-        "title": "AI overview",
+        "title": "Editor overview",
         "subtitle": "A guided snapshot of how today's edition was assembled.",
         "generatedAt": iso(generated),
         "summary": (
@@ -511,7 +506,7 @@ def build_overview(stories: list[dict], generated: datetime) -> dict:
             "Collecting fresh RSS signals from the configured publishers.",
             "Grouping related items by topic, keywords, timing and source overlap.",
             "Extracting usable article context and high quality preview images where available.",
-            "Writing concise English story briefs with source transparency preserved.",
+            "Writing source-led story briefs with source transparency preserved.",
         ],
         "highlights": [
             story["title"] for story in stories[:4]
@@ -522,7 +517,7 @@ def build_overview(stories: list[dict], generated: datetime) -> dict:
 
 def compose_story(seed: SourceArticle, cluster: list[SourceArticle], generated: datetime, slot: str, index: int) -> dict:
     title = editorial_title(seed, cluster)
-    subtitle = "What happened, why it matters, and what to watch next."
+    subtitle = "What is known so far, and what still needs confirmation."
     summary = make_summary(title, seed)
     body = detail_paragraphs(seed, cluster, title)
     takeaways = make_takeaways(seed, cluster)
@@ -542,7 +537,7 @@ def compose_story(seed: SourceArticle, cluster: list[SourceArticle], generated: 
         "takeaways": takeaways,
         "image": image,
         "color": seed.color,
-        "readingMinutes": max(2, round(sum(len(paragraph.split()) for paragraph in body) / 180)),
+        "readingMinutes": max(3, round(sum(len(paragraph.split()) for paragraph in body) / 180)),
         "sourceCount": len(cluster),
         "sources": [
             {
