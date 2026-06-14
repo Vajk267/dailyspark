@@ -1788,9 +1788,16 @@ main {
 
 .article-card.no-image {
   background:
-    linear-gradient(135deg, #ffffff 0%, #f7fbff 62%, #eef8ff 100%);
+    linear-gradient(135deg, #07111f 0%, #0d1b2d 58%, #10283a 100%);
   border-left: 6px solid var(--mag-accent);
+  color: #f7fbff;
   overflow: visible;
+}
+
+:root[data-theme="light"] .article-card.no-image {
+  background:
+    linear-gradient(135deg, #edf6fb 0%, #e5f0f7 58%, #dcecf6 100%);
+  color: #06111f;
 }
 
 .article-card.no-image .article-body {
@@ -1807,21 +1814,37 @@ main {
 
 .article-card.no-image .topic-pill,
 .article-card.no-image .source-pill {
-  background: #05070d;
+  background: rgba(56, 189, 248, 0.16);
   border: 0;
-  color: var(--mag-white);
+  color: #e7f7ff;
   display: inline-flex;
   position: static;
 }
 
 .article-card.no-image .source-pill {
-  background: rgba(5, 7, 13, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  color: #9eddf8;
+}
+
+:root[data-theme="light"] .article-card.no-image .topic-pill {
+  background: #062033;
+  color: #ffffff;
+}
+
+:root[data-theme="light"] .article-card.no-image .source-pill {
+  background: rgba(7, 89, 133, 0.1);
   color: #075985;
 }
 
 .article-card.no-image .meta {
-  border-top: 1px solid #d8e8f2;
+  border-top: 1px solid rgba(125, 211, 252, 0.22);
+  color: #9fb2c9;
   padding-top: 16px;
+}
+
+:root[data-theme="light"] .article-card.no-image .meta {
+  border-top-color: #bdd7e7;
+  color: #496175;
 }
 
 .feature-card.no-image {
@@ -1857,12 +1880,50 @@ main {
 
 .front-card.no-image h3,
 .more-tile.no-image h3 {
+  color: #f7fbff;
   margin-top: 10px;
+}
+
+.front-card.no-image .title-button,
+.more-tile.no-image .title-button {
+  color: #f7fbff;
+}
+
+.front-card.no-image .title-button:hover,
+.more-tile.no-image .title-button:hover {
+  color: #7dd3fc;
 }
 
 .front-card.no-image p,
 .more-tile.no-image p {
-  color: #25313d;
+  color: #c7d5e5;
+}
+
+.front-card.no-image .read-time,
+.more-tile.no-image .read-time {
+  color: #67d7ff;
+}
+
+:root[data-theme="light"] .front-card.no-image h3,
+:root[data-theme="light"] .more-tile.no-image h3,
+:root[data-theme="light"] .front-card.no-image .title-button,
+:root[data-theme="light"] .more-tile.no-image .title-button {
+  color: #06111f;
+}
+
+:root[data-theme="light"] .front-card.no-image .title-button:hover,
+:root[data-theme="light"] .more-tile.no-image .title-button:hover {
+  color: #075985;
+}
+
+:root[data-theme="light"] .front-card.no-image p,
+:root[data-theme="light"] .more-tile.no-image p {
+  color: #314558;
+}
+
+:root[data-theme="light"] .front-card.no-image .read-time,
+:root[data-theme="light"] .more-tile.no-image .read-time {
+  color: #075985;
 }
 
 .latest-item.no-image {
