@@ -22,6 +22,7 @@ const els = {
   sourceList: document.querySelector("#sourceList"),
   template: document.querySelector("#articleTemplate"),
   refreshView: document.querySelector("#refreshView"),
+  navTopicLinks: document.querySelectorAll(".nav-topics a[data-topic]"),
 };
 
 function refreshIcons() {
@@ -58,6 +59,14 @@ function currentArticles() {
   return articles.filter((article) => article.topic === state.category);
 }
 
+function setCategory(topic, { scroll = false } = {}) {
+  state.category = topic;
+  render();
+  if (scroll) {
+    document.querySelector("#stories")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 function renderTabs() {
   els.editionTabs.replaceChildren();
   state.data.editions.forEach((edition, index) => {
@@ -85,10 +94,20 @@ function renderFilters() {
     button.setAttribute("aria-pressed", String(topic === state.category));
     button.textContent = topic;
     button.addEventListener("click", () => {
-      state.category = topic;
-      render();
+      setCategory(topic);
     });
     els.categoryFilters.append(button);
+  });
+}
+
+function renderTopNavigation() {
+  els.navTopicLinks.forEach((link) => {
+    const isActive = link.dataset.topic === state.category;
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 
@@ -243,6 +262,7 @@ function render() {
   els.engineMode.textContent = "Editor overview";
   renderTabs();
   renderFilters();
+  renderTopNavigation();
   renderTicker();
   renderArticles();
   renderSources();
@@ -265,6 +285,13 @@ async function loadData() {
 els.refreshView.addEventListener("click", () => {
   loadData().catch((error) => {
     els.lastUpdated.textContent = error.message;
+  });
+});
+
+els.navTopicLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    setCategory(link.dataset.topic, { scroll: true });
   });
 });
 
