@@ -1282,13 +1282,18 @@ svg {
 /* DailySpark magazine front page */
 :root {
   --mag-accent: #38bdf8;
-  --mag-black: #000000;
+  --mag-black: #070a12;
+  --mag-surface: #0d111c;
+  --mag-surface-strong: #111827;
+  --mag-border: #232938;
   --mag-white: #ffffff;
-  --mag-muted: #a7a7a7;
+  --mag-muted: #a9b4c4;
+  --mag-ink-dark: #05070d;
 }
 
 body {
-  background: var(--mag-black);
+  background:
+    linear-gradient(180deg, var(--mag-black) 0%, #0a0f1a 54%, var(--mag-black) 100%);
 }
 
 :root[data-theme="light"] body {
@@ -1303,9 +1308,9 @@ body {
 
 .topbar,
 .article-topbar {
-  background: var(--mag-white);
-  border-bottom: 0;
-  color: #050505;
+  background: rgba(7, 10, 18, 0.96);
+  border-bottom: 1px solid var(--mag-border);
+  color: var(--mag-white);
   min-height: 70px;
   padding: 0 clamp(18px, 5vw, 72px);
   position: sticky;
@@ -1314,6 +1319,8 @@ body {
 :root[data-theme="light"] .topbar,
 :root[data-theme="light"] .article-topbar {
   background: var(--mag-white);
+  border-bottom: 1px solid #deded8;
+  color: var(--mag-ink-dark);
 }
 
 .brand-logo {
@@ -1332,10 +1339,14 @@ body {
 }
 
 .nav-topics a {
-  color: #070707;
+  color: #f4f7fb;
   font-size: 0.9rem;
   font-weight: 900;
   text-decoration: none;
+}
+
+:root[data-theme="light"] .nav-topics a {
+  color: var(--mag-ink-dark);
 }
 
 .nav-topics a:hover {
@@ -1348,8 +1359,15 @@ body {
 .system-pill {
   background: transparent;
   border: 0;
-  color: #070707;
+  color: #f4f7fb;
   min-height: 42px;
+}
+
+:root[data-theme="light"] .icon-button,
+:root[data-theme="light"] .theme-button,
+:root[data-theme="light"] .source-link,
+:root[data-theme="light"] .system-pill {
+  color: var(--mag-ink-dark);
 }
 
 .theme-button,
@@ -1360,10 +1378,15 @@ body {
 
 .source-link {
   background: var(--mag-accent);
+  color: #00131d;
   padding: 0 18px;
 }
 
 .system-pill {
+  border-left: 1px solid var(--mag-border);
+}
+
+:root[data-theme="light"] .system-pill {
   border-left: 1px solid #dddddd;
 }
 
@@ -1377,8 +1400,8 @@ body {
 }
 
 .breaking-strip {
-  background: #050505;
-  border-bottom: 1px solid #1d1d1d;
+  background: #05070d;
+  border-bottom: 1px solid var(--mag-border);
   color: #f4f4f4;
   min-height: 38px;
 }
@@ -1394,7 +1417,8 @@ body {
 }
 
 main {
-  background: var(--mag-black);
+  background:
+    linear-gradient(180deg, var(--mag-black), #0a0f1a 46%, var(--mag-black));
   color: var(--mag-white);
 }
 
@@ -1404,7 +1428,7 @@ main {
 }
 
 .status-band {
-  background: #050505;
+  background: var(--mag-surface);
   border: 0;
   color: var(--mag-white);
   margin: 0 auto;
@@ -1418,7 +1442,7 @@ main {
 }
 
 .status-band > div {
-  border-top: 1px solid #242424;
+  border-top: 1px solid var(--mag-border);
   padding: 18px 0;
 }
 
@@ -1439,7 +1463,7 @@ main {
 .tab-button,
 .filter-button {
   background: transparent;
-  border: 1px solid #333333;
+  border: 1px solid var(--mag-border);
   color: #eeeeee;
   font-size: 0.82rem;
   font-weight: 900;
@@ -1590,7 +1614,7 @@ main {
 }
 
 .feature-card {
-  background: #050505;
+  background: #05070d;
   color: var(--mag-white);
   min-height: 430px;
   overflow: hidden;
@@ -1751,8 +1775,8 @@ main {
 }
 
 .source-band {
-  background: #050505;
-  border-top: 1px solid #242424;
+  background: var(--mag-surface);
+  border-top: 1px solid var(--mag-border);
   margin: 0 auto;
   max-width: 1120px;
 }
