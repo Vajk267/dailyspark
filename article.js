@@ -10,11 +10,8 @@ function formatDate(value) {
   }).format(new Date(value));
 }
 
-function fallbackImage(article) {
-  const color = article.color || "#38bdf8";
-  const topic = article.topic || "DailySpark";
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><rect width="1600" height="1000" fill="#050816"/><circle cx="1260" cy="210" r="280" fill="${color}" opacity=".55"/><path d="M120 690 C420 460 620 840 930 560 C1130 380 1290 470 1500 300" fill="none" stroke="rgba(255,255,255,.38)" stroke-width="18"/><text x="95" y="170" fill="white" font-family="Arial" font-size="92" font-weight="700">${topic}</text></svg>`;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+function hasArticleImage(article) {
+  return Boolean(article.image && article.image.trim());
 }
 
 function renderSource(source) {
@@ -51,11 +48,18 @@ function renderMoreArticles(article, articles) {
 function renderArticle(article, articles) {
   document.title = `${article.title} | DailySpark`;
   const image = document.querySelector("#articleImage");
-  image.src = article.image || fallbackImage(article);
-  image.alt = `${article.topic} story image`;
-  image.addEventListener("error", () => {
-    image.src = fallbackImage(article);
-  }, { once: true });
+  const hero = document.querySelector(".reader-hero");
+  if (hasArticleImage(article)) {
+    image.src = article.image;
+    image.alt = `${article.topic} story image`;
+    image.addEventListener("error", () => {
+      hero.classList.add("no-image");
+      image.remove();
+    }, { once: true });
+  } else {
+    hero.classList.add("no-image");
+    image.remove();
+  }
 
   document.querySelector("#articleTopic").textContent = article.topic;
   document.querySelector("#articleTitle").textContent = article.title;

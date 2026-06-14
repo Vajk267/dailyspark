@@ -36,14 +36,8 @@ function formatDate(value) {
   }).format(new Date(value));
 }
 
-function fallbackImage(article) {
-  const topic = article.topic || "DailySpark";
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050816"/><stop offset=".55" stop-color="#0ea5e9"/><stop offset="1" stop-color="#111827"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="45"/></filter></defs><rect width="1600" height="1000" fill="url(#g)"/><circle cx="1220" cy="180" r="210" fill="rgba(56,189,248,.34)" filter="url(#blur)"/><circle cx="280" cy="840" r="260" fill="rgba(56,189,248,.16)" filter="url(#blur)"/><path d="M120 690 C420 460 620 840 930 560 C1130 380 1290 470 1500 300" fill="none" stroke="rgba(255,255,255,.38)" stroke-width="18"/><text x="95" y="170" fill="white" font-family="Arial" font-size="92" font-weight="700">${topic}</text><text x="100" y="245" fill="rgba(255,255,255,.72)" font-family="Arial" font-size="34">DailySpark</text></svg>`;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
-
-function articleImage(article) {
-  return article.image || fallbackImage(article);
+function hasArticleImage(article) {
+  return Boolean(article.image && article.image.trim());
 }
 
 function articleUrl(article) {
@@ -105,13 +99,26 @@ function openArticleInNewTab(article) {
 function renderArticle(article, variant = "") {
   const fragment = els.template.content.cloneNode(true);
   const card = fragment.querySelector(".article-card");
+  const imageLink = fragment.querySelector(".image-link");
   const image = fragment.querySelector("img");
   const topic = fragment.querySelector(".topic-pill");
+  const sourcePill = fragment.querySelector(".source-pill");
   const sourceCount = fragment.querySelector(".source-pill span");
   const meta = fragment.querySelector(".meta");
   const title = fragment.querySelector(".title-button");
   const summary = fragment.querySelector("p");
   const readTime = fragment.querySelector(".read-time");
+  const body = fragment.querySelector(".article-body");
+
+  function renderWithoutImage() {
+    card.classList.remove("has-image");
+    card.classList.add("no-image");
+    const kicker = document.createElement("div");
+    kicker.className = "card-kicker";
+    kicker.append(topic, sourcePill);
+    body.prepend(kicker);
+    imageLink.remove();
+  }
 
   if (variant) card.classList.add(variant);
   card.dataset.href = articleUrl(article);
@@ -124,13 +131,16 @@ function renderArticle(article, variant = "") {
     }
   });
 
-  image.src = articleImage(article);
-  image.addEventListener("error", () => {
-    image.src = fallbackImage(article);
-  }, { once: true });
-  image.alt = `${article.topic} story image`;
   topic.textContent = article.topic;
   sourceCount.textContent = `${article.sourceCount || article.sources?.length || 1} sources`;
+  if (hasArticleImage(article)) {
+    card.classList.add("has-image");
+    image.src = article.image;
+    image.alt = `${article.topic} story image`;
+    image.addEventListener("error", renderWithoutImage, { once: true });
+  } else {
+    renderWithoutImage();
+  }
   meta.textContent = `${article.source || "DailySpark"} | ${formatDate(article.publishedAt)}`;
   title.textContent = article.title;
   summary.textContent = article.summary || "Summary unavailable.";
@@ -154,11 +164,17 @@ function renderLatestItem(article) {
   `;
 
   const image = item.querySelector("img");
-  image.src = articleImage(article);
-  image.alt = `${article.topic} story image`;
-  image.addEventListener("error", () => {
-    image.src = fallbackImage(article);
-  }, { once: true });
+  if (hasArticleImage(article)) {
+    image.src = article.image;
+    image.alt = `${article.topic} story image`;
+    image.addEventListener("error", () => {
+      item.classList.add("no-image");
+      image.remove();
+    }, { once: true });
+  } else {
+    item.classList.add("no-image");
+    image.remove();
+  }
   item.querySelector("span").textContent = article.topic;
   item.querySelector("strong").textContent = article.title;
 
