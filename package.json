@@ -1,0 +1,11 @@
+{
+  "name": "dailyspark",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "preview": "python -m http.server 8000",
+    "netlify:preview-news": "netlify functions:invoke preview-news"
+  }
+}

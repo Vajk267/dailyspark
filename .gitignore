@@ -1,0 +1,5 @@
+dist/
+*.zip
+scripts/__pycache__/
+*.pyc
+.netlify/

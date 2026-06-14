@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DailySpark story</title>
+    <meta name="description" content="DailySpark story with source links.">
+    <link rel="stylesheet" href="styles.css?v=20260614-ticker-clean">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="theme.js" defer></script>
+  </head>
+  <body class="article-page">
+    <header class="article-topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/dailyspark-logo.svg" alt="DailySpark">
+      </a>
+      <div class="top-actions">
+        <button class="theme-button" data-theme-toggle type="button" aria-label="Switch theme" title="Switch theme">
+          <i data-lucide="sun" aria-hidden="true"></i>
+          <span>Light</span>
+        </button>
+        <a class="source-link" href="index.html#stories">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="article-shell article-layout">
+      <article class="article-main">
+        <div class="reader-hero">
+          <img id="articleImage" alt="">
+          <div class="reader-hero-copy">
+            <span class="topic-pill" id="articleTopic"></span>
+            <h1 id="articleTitle">Loading...</h1>
+            <p id="articleSubtitle"></p>
+            <div class="reader-meta" id="articleMeta"></div>
+          </div>
+        </div>
+        <div class="reader-content">
+          <section class="takeaway-box">
+            <h2>Key points</h2>
+            <ul id="articleTakeaways"></ul>
+          </section>
+          <div class="story-body" id="articleBody"></div>
+          <section class="source-stack">
+            <h2>Sources</h2>
+            <div id="articleSources"></div>
+          </section>
+        </div>
+      </article>
+      <aside class="more-rail" aria-label="More articles">
+        <div class="rail-sticky">
+          <p class="eyebrow">More stories</p>
+          <h2>Keep reading</h2>
+          <div id="moreArticles"></div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="article.js" type="module"></script>
+  </body>
+</html>

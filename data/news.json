@@ -1,0 +1,1316 @@
+{
+  "site": "DailySpark",
+  "lastUpdated": "2026-06-14T11:42:34.748646Z",
+  "sources": [
+    {
+      "name": "BBC World",
+      "topic": "World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "name": "BBC Business",
+      "topic": "Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml"
+    },
+    {
+      "name": "BBC Technology",
+      "topic": "Technology",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    },
+    {
+      "name": "BBC Science",
+      "topic": "Science",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    },
+    {
+      "name": "BBC Sport",
+      "topic": "Sport",
+      "url": "https://feeds.bbci.co.uk/sport/rss.xml"
+    },
+    {
+      "name": "The Guardian World",
+      "topic": "World",
+      "url": "https://www.theguardian.com/world/rss"
+    },
+    {
+      "name": "The Guardian Culture",
+      "topic": "Culture",
+      "url": "https://www.theguardian.com/culture/rss"
+    },
+    {
+      "name": "The Guardian Technology",
+      "topic": "Technology",
+      "url": "https://www.theguardian.com/technology/rss"
+    },
+    {
+      "name": "The Guardian Business",
+      "topic": "Business",
+      "url": "https://www.theguardian.com/business/rss"
+    },
+    {
+      "name": "The Guardian Sport",
+      "topic": "Sport",
+      "url": "https://www.theguardian.com/sport/rss"
+    }
+  ],
+  "editions": [
+    {
+      "id": "2026-06-14-late",
+      "slot": "late",
+      "label": "Latest edition",
+      "generatedAt": "2026-06-14T11:42:34.748646Z",
+      "articleTarget": 10,
+      "articles": [
+        {
+          "id": "2026-06-14-late-1-swiss-voters-reject-10-million-population-90d729bf00",
+          "title": "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-1-swiss-voters-reject-10-million-population-90d729bf00",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+          "body": [
+            "The story centers on swiss voters reject 10 million population cap, early projections say. The central point from the latest reporting is this: Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "The immediate detail is more concrete. Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal. Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for. The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform.",
+            "The surrounding context matters because it shows where the story may move next. The divisive vote risked putting the country's free movement agreement with the European Union in jeopardy. The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative. Prefer the Guardian on Google A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative.",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for.",
+            "The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/94f7/live/fd42fdf0-67df-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Swiss voters reject 10 million population cap, early projections say",
+              "url": "https://www.bbc.com/news/articles/c20ygjem17zo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:31:32Z",
+              "excerpt": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal."
+            },
+            {
+              "title": "Swiss wait to hear result of ballot on capping population at 10 million",
+              "url": "https://www.theguardian.com/world/2026/jun/13/swiss-wait-to-hear-result-of-ballot-on-capping-population-at-10-million",
+              "source": "The Guardian World",
+              "publishedAt": "2026-06-13T05:00:07Z",
+              "excerpt": "The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-2-world-cup-2026-scotland-react-to-first-vic-90cc86ee44",
+          "title": "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-2-world-cup-2026-scotland-react-to-first-vic-90cc86ee44",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+          "body": [
+            "The story centers on world cup 2026: scotland react to first victory in 36 years as australia beat.... The central point from the latest reporting is this: News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "The immediate detail is more concrete. News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games... Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver. Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Javier Garcia/Shutterstock View image in fullscreen Scotland are top of their group following the win over Haiti. Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver. The one act pulled past and future together on a night when Australia's next generation delivered one of their best World Cup victories, to start their 2026 campaign...",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver.",
+            "Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti."
+          ],
+          "image": "https://i.guim.co.uk/img/media/275a5f2cbb803261791be7e390b00eede0fd8cf4/0_645_3855_3082/master/3855.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=38ba98756108737b17981ad4f0c156d0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 3,
+          "sources": [
+            {
+              "title": "World Cup 2026: Scotland react to first victory in 36 years as Australia beat Turkey - live",
+              "url": "https://www.theguardian.com/football/live/2026/jun/14/world-cup-2026-news-scotland-react-to-first-world-cup-victory-in-36-years-as-australia-beat-turkey",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:26:27Z",
+              "excerpt": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games..."
+            },
+            {
+              "title": "Socceroos stun Turkey as Australia's youngsters shine in opening World Cup win",
+              "url": "https://www.theguardian.com/football/2026/jun/14/australia-socceroos-turkey-world-cup-2026-group-d-match-report",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T05:57:52Z",
+              "excerpt": "Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver."
+            },
+            {
+              "title": "Clinical Australia upset Turkey in World Cup opener",
+              "url": "https://www.bbc.com/sport/football/videos/cgk6j2r6p7mo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Sport",
+              "publishedAt": "2026-06-14T07:16:45Z",
+              "excerpt": "Watch highlights as Australia beat Turkey in their opening match, with 20-year-old Nestory Irankunda becoming the Socceroos's youngest ever World Cup goalscorer."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-3-lancs-v-kent-jordan-cox-joins-england-mid-3a8cea25b3",
+          "title": "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-3-lancs-v-kent-jordan-cox-joins-england-mid-3a8cea25b3",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+          "body": [
+            "The story centers on lancs v kent, jordan cox joins england mid match and more. The central point from the latest reporting is this: Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+            "The immediate detail is more concrete. Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1. The sun is even straining to come out from net curtain clouds. Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores on the doors 3h ago Roundup: Stokes warms up as Durham run rings round Derbyshire 3h ago Preamble Nottinghamshire host Somerset at Trent Bridge.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Steve Poole/ProSports/Shutterstock View image in fullscreen Nottinghamshire host Somerset at Trent Bridge. Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten season, poor thing. IF anyone didn't know, Ajit Singh Dale and Luke Wells are out for the season.",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire...",
+            "The sun is even straining to come out from net curtain clouds.",
+            "Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/5cef4dddc3819f73297819f4e5c5897cfe7fc907/225_0_2250_1800/master/2250.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=9cd23b143fc8e07bcd41bacf49e69f10",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Lancs v Kent, Jordan Cox joins England mid match and more: county cricket day three - live",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/14/notts-v-somerset-sussex-v-glamorgan-and-more-county-cricket-day-three-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:25:02Z",
+              "excerpt": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this..."
+            },
+            {
+              "title": "Stokes trains with Durham, Sussex's Coles makes double century: county cricket, day two - as it happened",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/13/nottinghamshire-v-somerset-yorkshire-v-warwickshire-and-more-county-cricket-day-two-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-13T19:46:48Z",
+              "excerpt": "Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-4-trump-says-us-iran-deal-to-be-signed-on-su-bba58369d5",
+          "title": "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-4-trump-says-us-iran-deal-to-be-signed-on-su-bba58369d5",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "The US president's comments come as Iran says an exact date has not been decided.",
+          "body": [
+            "The story centers on trump says us-iran deal to be signed on sunday as tehran casts doubt on timing. The central point from the latest reporting is this: The US president's comments come as Iran says an exact date has not been decided.",
+            "The immediate detail is more concrete. The US president's comments come as Iran says an exact date has not been decided. In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed. On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\".",
+            "The surrounding context matters because it shows where the story may move next. Before Trump's comments, Iranian foreign ministry spokesman Esmail Baghaei expressed caution over the timeline, saying: \"We will have to wait and see about the exact date of the signing of the memorandum of understanding, although it will not be tomorrow [Sunday].\" A delegation from Qatar, which has also mediated in the talks, arrived in Tehran on Sunday,...",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "The US president's comments come as Iran says an exact date has not been decided.",
+            "In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed.",
+            "On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\"."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/a4ff/live/e53f0010-674d-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+              "url": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:23:36Z",
+              "excerpt": "The US president's comments come as Iran says an exact date has not been decided."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-5-elon-musk-and-co-may-relish-march-of-the-r-7c90d7d8ec",
+          "title": "Business: Elon Musk and co may relish march of the robots but there must be AI boundaries in...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-5-elon-musk-and-co-may-relish-march-of-the-r-7c90d7d8ec",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+          "body": [
+            "The story centers on elon musk and co may relish march of the robots but there must be ai boundaries in.... The central point from the latest reporting is this: As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The immediate detail is more concrete. As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood... A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The surrounding context matters because it shows where the story may move next. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood performer would.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic...",
+            "While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood...",
+            "A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human."
+          ],
+          "image": "https://i.guim.co.uk/img/media/86b785bcb485b44d690a76a1665c352a7b9529e8/1081_38_5065_4055/master/5065.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f8cb41cd3d474060ba2b82bd942e56ee",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Elon Musk and co may relish march of the robots but there must be AI boundaries in the workplace | Heather Stewart",
+              "url": "https://www.theguardian.com/business/2026/jun/14/ai-technology-workplace-boundaries-elon-musk",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:03:07Z",
+              "excerpt": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-6-have-i-been-influenced-or-is-this-actuall-9ce005167f",
+          "title": "Technology: 'Have I been influenced, or is this actually me?' How personal taste fell out of...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-6-have-i-been-influenced-or-is-this-actuall-9ce005167f",
+          "source": "DailySpark newsroom",
+          "topic": "Technology",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+          "body": [
+            "The story centers on 'have i been influenced, or is this actually me?' how personal taste fell out of.... The central point from the latest reporting is this: Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "The immediate detail is more concrete. Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep. Meet the style rebels fighting back What are you into? What music, films, clothes, art, books - anything, really - do you actually like?",
+            "The surrounding context matters because it shows where the story may move next. Do you find these questions more difficult to answer than you would have done...",
+            "For readers following technology, the important question is whether the first report changes how companies, users, regulators, or developers behave next.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "Meet the style rebels fighting back What are you into?",
+            "What music, films, clothes, art, books - anything, really - do you actually like?"
+          ],
+          "image": "https://i.guim.co.uk/img/media/d36e785d8b943ad655c143990208db68068d93e0/52_0_4990_3993/master/4990.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=238b65bbefb41afbf8597d9b1273a3f4",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'Have I been influenced, or is this actually me?' How personal taste fell out of fashion",
+              "url": "https://www.theguardian.com/media/2026/jun/14/have-i-been-influenced-personal-taste-out-of-fashion-algorithm",
+              "source": "The Guardian Technology",
+              "publishedAt": "2026-06-14T11:00:42Z",
+              "excerpt": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-7-people-start-connecting-the-dots-why-an-i-24334afe3d",
+          "title": "Business: 'People start connecting the dots'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-7-people-start-connecting-the-dots-why-an-i-24334afe3d",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+          "body": [
+            "The story centers on 'people start connecting the dots'. The central point from the latest reporting is this: Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "The immediate detail is more concrete. Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below. The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls. The view may be idyllic, but it belies the condition...",
+            "The surrounding context matters because it shows where the story may move next. Joanna Partridge in Skipton Sun 14 Jun 2026 13.00 CEST Last modified on Sun 14 Jun 2026 13.01 CEST Share Prefer the Guardian on Google From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls...",
+            "The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls.",
+            "The view may be idyllic, but it belies the condition..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/4e08eab35f79ff6f2b6bb80abded05b440a7f388/606_0_6500_5200/master/6500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6b9addbfe2c4fd2fbac498f58c098c29",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'People start connecting the dots': why an investment fund is rewilding a North Yorkshire estate",
+              "url": "https://www.theguardian.com/environment/2026/jun/14/why-investment-fund-rewilding-north-yorkshire-estate-rebalance-earth",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:00:41Z",
+              "excerpt": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-8-atlantis-review-welsh-climate-crisis-drama-9e8a3aea40",
+          "title": "Culture: Atlantis review",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-8-atlantis-review-welsh-climate-crisis-drama-9e8a3aea40",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+          "body": [
+            "The story centers on atlantis review. The central point from the latest reporting is this: Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+            "The immediate detail is more concrete. Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable. Instead, as part of a process of \"managed retreat\",... Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable.",
+            "The surrounding context matters because it shows where the story may move next. Instead, as part of a process of \"managed retreat\", this small coastal Welsh village would be abandoned to the sea by 2055.",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014,...",
+            "Instead, as part of a process of \"managed retreat\",...",
+            "Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/40084421caff37eac3b9a37f441675af42a99219/793_0_4440_3552/master/4440.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTIucG5n&enable=upscale&s=74e9a5f66bab0f98bc0b161e7fa9fda0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Atlantis review - Welsh climate crisis drama is a parable for our times",
+              "url": "https://www.theguardian.com/stage/2026/jun/14/atlantis-review-theatr-clwyd-mold",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T10:50:53Z",
+              "excerpt": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-9-i-have-a-naughty-schoolboy-attitude-anish-aad03f167e",
+          "title": "Culture: 'I have a naughty schoolboy attitude'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-9-i-have-a-naughty-schoolboy-attitude-anish-aad03f167e",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+          "body": [
+            "The story centers on 'i have a naughty schoolboy attitude'. The central point from the latest reporting is this: As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+            "The immediate detail is more concrete. As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting... Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting room. The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades.",
+            "The surrounding context matters because it shows where the story may move next. When he's in town, everyone wants a piece (\"It's like The West Wing,\" says one gallery rep).",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience...",
+            "Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs...",
+            "The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades."
+          ],
+          "image": "https://i.guim.co.uk/img/media/9b2c6caf6c4a5066642d87aab983549969d618bc/1138_82_5960_4768/master/5960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2053ef01f6912d2517522476b523b029",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'I have a naughty schoolboy attitude': Anish Kapoor reveals his latest epic creations",
+              "url": "https://www.theguardian.com/culture/2026/jun/14/anish-kapoor-hayward-gallery-interview",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T09:00:38Z",
+              "excerpt": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-late-10-how-forgotten-voyages-helped-track-el-nino-a52ee901fa",
+          "title": "Science: How forgotten voyages helped track El Nino",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-late-10-how-forgotten-voyages-helped-track-el-nino-a52ee901fa",
+          "source": "DailySpark newsroom",
+          "topic": "Science",
+          "publishedAt": "2026-06-14T11:42:34.748646Z",
+          "updatedAt": "2026-06-14T11:42:34.748646Z",
+          "summary": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+          "body": [
+            "The story centers on how forgotten voyages helped track el nino. The central point from the latest reporting is this: A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "The immediate detail is more concrete. A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans. Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe. Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as the Hidden East Yorkshire podcast has been hearing.",
+            "The surrounding context matters because it shows where the story may move next. \"There's a lot been on the news quite recently about El Nino and the effects the global impact of this warm water current in the Pacific might have on the world as it has in the past,\" says Dr Rob Robinson, an honorary research fellow at the University of Hull.",
+            "For readers following science, the important question is whether the finding, warning, or field report is confirmed by more evidence and translated into practical decisions.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe.",
+            "Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as..."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/4e2d/live/b880d960-657f-11f1-9f01-693d064aea27.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "How forgotten voyages helped track El Nino",
+              "url": "https://www.bbc.com/news/articles/cnv9dlppmr7o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Science",
+              "publishedAt": "2026-06-14T07:35:44Z",
+              "excerpt": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans."
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "title": "AI overview",
+        "subtitle": "A guided snapshot of how today's edition was assembled.",
+        "generatedAt": "2026-06-14T11:42:34.748646Z",
+        "summary": "This edition turns 14 source signals into 10 readable stories. The main coverage areas are World, Sport, Business, Technology, Culture.",
+        "steps": [
+          "Collecting fresh RSS signals from the configured publishers.",
+          "Grouping related items by topic, keywords, timing and source overlap.",
+          "Extracting usable article context and high quality preview images where available.",
+          "Writing concise English story briefs with source transparency preserved."
+        ],
+        "highlights": [
+          "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
+        ],
+        "url": "overview.html"
+      },
+      "errors": [],
+      "mode": "source-synthesis"
+    },
+    {
+      "id": "2026-06-14-evening",
+      "slot": "evening",
+      "label": "Evening edition",
+      "generatedAt": "2026-06-14T11:42:30.902244Z",
+      "articleTarget": 10,
+      "articles": [
+        {
+          "id": "2026-06-14-evening-1-swiss-voters-reject-10-million-population-b04d5f8616",
+          "title": "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-1-swiss-voters-reject-10-million-population-b04d5f8616",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+          "body": [
+            "The story centers on swiss voters reject 10 million population cap, early projections say. The central point from the latest reporting is this: Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "The immediate detail is more concrete. Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal. Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for. The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform.",
+            "The surrounding context matters because it shows where the story may move next. The divisive vote risked putting the country's free movement agreement with the European Union in jeopardy. The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative. Prefer the Guardian on Google A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative.",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for.",
+            "The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/94f7/live/fd42fdf0-67df-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Swiss voters reject 10 million population cap, early projections say",
+              "url": "https://www.bbc.com/news/articles/c20ygjem17zo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:31:32Z",
+              "excerpt": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal."
+            },
+            {
+              "title": "Swiss wait to hear result of ballot on capping population at 10 million",
+              "url": "https://www.theguardian.com/world/2026/jun/13/swiss-wait-to-hear-result-of-ballot-on-capping-population-at-10-million",
+              "source": "The Guardian World",
+              "publishedAt": "2026-06-13T05:00:07Z",
+              "excerpt": "The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-2-world-cup-2026-scotland-react-to-first-vic-22bd4d17ef",
+          "title": "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-2-world-cup-2026-scotland-react-to-first-vic-22bd4d17ef",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+          "body": [
+            "The story centers on world cup 2026: scotland react to first victory in 36 years as australia beat.... The central point from the latest reporting is this: News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "The immediate detail is more concrete. News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games... Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver. Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Javier Garcia/Shutterstock View image in fullscreen Scotland are top of their group following the win over Haiti. Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver. The one act pulled past and future together on a night when Australia's next generation delivered one of their best World Cup victories, to start their 2026 campaign...",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver.",
+            "Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti."
+          ],
+          "image": "https://i.guim.co.uk/img/media/275a5f2cbb803261791be7e390b00eede0fd8cf4/0_645_3855_3082/master/3855.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=38ba98756108737b17981ad4f0c156d0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 3,
+          "sources": [
+            {
+              "title": "World Cup 2026: Scotland react to first victory in 36 years as Australia beat Turkey - live",
+              "url": "https://www.theguardian.com/football/live/2026/jun/14/world-cup-2026-news-scotland-react-to-first-world-cup-victory-in-36-years-as-australia-beat-turkey",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:26:27Z",
+              "excerpt": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games..."
+            },
+            {
+              "title": "Socceroos stun Turkey as Australia's youngsters shine in opening World Cup win",
+              "url": "https://www.theguardian.com/football/2026/jun/14/australia-socceroos-turkey-world-cup-2026-group-d-match-report",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T05:57:52Z",
+              "excerpt": "Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver."
+            },
+            {
+              "title": "Clinical Australia upset Turkey in World Cup opener",
+              "url": "https://www.bbc.com/sport/football/videos/cgk6j2r6p7mo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Sport",
+              "publishedAt": "2026-06-14T07:16:45Z",
+              "excerpt": "Watch highlights as Australia beat Turkey in their opening match, with 20-year-old Nestory Irankunda becoming the Socceroos's youngest ever World Cup goalscorer."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-3-lancs-v-kent-jordan-cox-joins-england-mid-408d1a3f7e",
+          "title": "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-3-lancs-v-kent-jordan-cox-joins-england-mid-408d1a3f7e",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+          "body": [
+            "The story centers on lancs v kent, jordan cox joins england mid match and more. The central point from the latest reporting is this: Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+            "The immediate detail is more concrete. Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1. The sun is even straining to come out from net curtain clouds. Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores on the doors 3h ago Roundup: Stokes warms up as Durham run rings round Derbyshire 3h ago Preamble Nottinghamshire host Somerset at Trent Bridge.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Steve Poole/ProSports/Shutterstock View image in fullscreen Nottinghamshire host Somerset at Trent Bridge. Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten season, poor thing. IF anyone didn't know, Ajit Singh Dale and Luke Wells are out for the season.",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire...",
+            "The sun is even straining to come out from net curtain clouds.",
+            "Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/5cef4dddc3819f73297819f4e5c5897cfe7fc907/225_0_2250_1800/master/2250.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=9cd23b143fc8e07bcd41bacf49e69f10",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Lancs v Kent, Jordan Cox joins England mid match and more: county cricket day three - live",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/14/notts-v-somerset-sussex-v-glamorgan-and-more-county-cricket-day-three-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:25:02Z",
+              "excerpt": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this..."
+            },
+            {
+              "title": "Stokes trains with Durham, Sussex's Coles makes double century: county cricket, day two - as it happened",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/13/nottinghamshire-v-somerset-yorkshire-v-warwickshire-and-more-county-cricket-day-two-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-13T19:46:48Z",
+              "excerpt": "Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-4-trump-says-us-iran-deal-to-be-signed-on-su-cdc3c7b2cf",
+          "title": "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-4-trump-says-us-iran-deal-to-be-signed-on-su-cdc3c7b2cf",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "The US president's comments come as Iran says an exact date has not been decided.",
+          "body": [
+            "The story centers on trump says us-iran deal to be signed on sunday as tehran casts doubt on timing. The central point from the latest reporting is this: The US president's comments come as Iran says an exact date has not been decided.",
+            "The immediate detail is more concrete. The US president's comments come as Iran says an exact date has not been decided. In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed. On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\".",
+            "The surrounding context matters because it shows where the story may move next. Before Trump's comments, Iranian foreign ministry spokesman Esmail Baghaei expressed caution over the timeline, saying: \"We will have to wait and see about the exact date of the signing of the memorandum of understanding, although it will not be tomorrow [Sunday].\" A delegation from Qatar, which has also mediated in the talks, arrived in Tehran on Sunday,...",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "The US president's comments come as Iran says an exact date has not been decided.",
+            "In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed.",
+            "On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\"."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/a4ff/live/e53f0010-674d-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+              "url": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:23:36Z",
+              "excerpt": "The US president's comments come as Iran says an exact date has not been decided."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-5-elon-musk-and-co-may-relish-march-of-the-r-7face8c505",
+          "title": "Business: Elon Musk and co may relish march of the robots but there must be AI boundaries in...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-5-elon-musk-and-co-may-relish-march-of-the-r-7face8c505",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+          "body": [
+            "The story centers on elon musk and co may relish march of the robots but there must be ai boundaries in.... The central point from the latest reporting is this: As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The immediate detail is more concrete. As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood... A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The surrounding context matters because it shows where the story may move next. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood performer would.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic...",
+            "While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood...",
+            "A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human."
+          ],
+          "image": "https://i.guim.co.uk/img/media/86b785bcb485b44d690a76a1665c352a7b9529e8/1081_38_5065_4055/master/5065.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f8cb41cd3d474060ba2b82bd942e56ee",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Elon Musk and co may relish march of the robots but there must be AI boundaries in the workplace | Heather Stewart",
+              "url": "https://www.theguardian.com/business/2026/jun/14/ai-technology-workplace-boundaries-elon-musk",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:03:07Z",
+              "excerpt": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-6-have-i-been-influenced-or-is-this-actuall-37c0a070f4",
+          "title": "Technology: 'Have I been influenced, or is this actually me?' How personal taste fell out of...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-6-have-i-been-influenced-or-is-this-actuall-37c0a070f4",
+          "source": "DailySpark newsroom",
+          "topic": "Technology",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+          "body": [
+            "The story centers on 'have i been influenced, or is this actually me?' how personal taste fell out of.... The central point from the latest reporting is this: Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "The immediate detail is more concrete. Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep. Meet the style rebels fighting back What are you into? What music, films, clothes, art, books - anything, really - do you actually like?",
+            "The surrounding context matters because it shows where the story may move next. Do you find these questions more difficult to answer than you would have done...",
+            "For readers following technology, the important question is whether the first report changes how companies, users, regulators, or developers behave next.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "Meet the style rebels fighting back What are you into?",
+            "What music, films, clothes, art, books - anything, really - do you actually like?"
+          ],
+          "image": "https://i.guim.co.uk/img/media/d36e785d8b943ad655c143990208db68068d93e0/52_0_4990_3993/master/4990.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=238b65bbefb41afbf8597d9b1273a3f4",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'Have I been influenced, or is this actually me?' How personal taste fell out of fashion",
+              "url": "https://www.theguardian.com/media/2026/jun/14/have-i-been-influenced-personal-taste-out-of-fashion-algorithm",
+              "source": "The Guardian Technology",
+              "publishedAt": "2026-06-14T11:00:42Z",
+              "excerpt": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-7-people-start-connecting-the-dots-why-an-i-df7f7e2a1a",
+          "title": "Business: 'People start connecting the dots'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-7-people-start-connecting-the-dots-why-an-i-df7f7e2a1a",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+          "body": [
+            "The story centers on 'people start connecting the dots'. The central point from the latest reporting is this: Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "The immediate detail is more concrete. Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below. The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls. The view may be idyllic, but it belies the condition...",
+            "The surrounding context matters because it shows where the story may move next. Joanna Partridge in Skipton Sun 14 Jun 2026 13.00 CEST Last modified on Sun 14 Jun 2026 13.01 CEST Share Prefer the Guardian on Google From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls...",
+            "The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls.",
+            "The view may be idyllic, but it belies the condition..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/4e08eab35f79ff6f2b6bb80abded05b440a7f388/606_0_6500_5200/master/6500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6b9addbfe2c4fd2fbac498f58c098c29",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'People start connecting the dots': why an investment fund is rewilding a North Yorkshire estate",
+              "url": "https://www.theguardian.com/environment/2026/jun/14/why-investment-fund-rewilding-north-yorkshire-estate-rebalance-earth",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:00:41Z",
+              "excerpt": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-8-atlantis-review-welsh-climate-crisis-drama-1414d9f164",
+          "title": "Culture: Atlantis review",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-8-atlantis-review-welsh-climate-crisis-drama-1414d9f164",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+          "body": [
+            "The story centers on atlantis review. The central point from the latest reporting is this: Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+            "The immediate detail is more concrete. Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable. Instead, as part of a process of \"managed retreat\",... Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable.",
+            "The surrounding context matters because it shows where the story may move next. Instead, as part of a process of \"managed retreat\", this small coastal Welsh village would be abandoned to the sea by 2055.",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014,...",
+            "Instead, as part of a process of \"managed retreat\",...",
+            "Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/40084421caff37eac3b9a37f441675af42a99219/793_0_4440_3552/master/4440.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTIucG5n&enable=upscale&s=74e9a5f66bab0f98bc0b161e7fa9fda0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Atlantis review - Welsh climate crisis drama is a parable for our times",
+              "url": "https://www.theguardian.com/stage/2026/jun/14/atlantis-review-theatr-clwyd-mold",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T10:50:53Z",
+              "excerpt": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-9-i-have-a-naughty-schoolboy-attitude-anish-08f1951d31",
+          "title": "Culture: 'I have a naughty schoolboy attitude'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-9-i-have-a-naughty-schoolboy-attitude-anish-08f1951d31",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+          "body": [
+            "The story centers on 'i have a naughty schoolboy attitude'. The central point from the latest reporting is this: As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+            "The immediate detail is more concrete. As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting... Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting room. The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades.",
+            "The surrounding context matters because it shows where the story may move next. When he's in town, everyone wants a piece (\"It's like The West Wing,\" says one gallery rep).",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience...",
+            "Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs...",
+            "The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades."
+          ],
+          "image": "https://i.guim.co.uk/img/media/9b2c6caf6c4a5066642d87aab983549969d618bc/1138_82_5960_4768/master/5960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2053ef01f6912d2517522476b523b029",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'I have a naughty schoolboy attitude': Anish Kapoor reveals his latest epic creations",
+              "url": "https://www.theguardian.com/culture/2026/jun/14/anish-kapoor-hayward-gallery-interview",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T09:00:38Z",
+              "excerpt": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-evening-10-how-forgotten-voyages-helped-track-el-nino-419cf93bd7",
+          "title": "Science: How forgotten voyages helped track El Nino",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-evening-10-how-forgotten-voyages-helped-track-el-nino-419cf93bd7",
+          "source": "DailySpark newsroom",
+          "topic": "Science",
+          "publishedAt": "2026-06-14T11:42:30.902244Z",
+          "updatedAt": "2026-06-14T11:42:30.902244Z",
+          "summary": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+          "body": [
+            "The story centers on how forgotten voyages helped track el nino. The central point from the latest reporting is this: A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "The immediate detail is more concrete. A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans. Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe. Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as the Hidden East Yorkshire podcast has been hearing.",
+            "The surrounding context matters because it shows where the story may move next. \"There's a lot been on the news quite recently about El Nino and the effects the global impact of this warm water current in the Pacific might have on the world as it has in the past,\" says Dr Rob Robinson, an honorary research fellow at the University of Hull.",
+            "For readers following science, the important question is whether the finding, warning, or field report is confirmed by more evidence and translated into practical decisions.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe.",
+            "Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as..."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/4e2d/live/b880d960-657f-11f1-9f01-693d064aea27.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "How forgotten voyages helped track El Nino",
+              "url": "https://www.bbc.com/news/articles/cnv9dlppmr7o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Science",
+              "publishedAt": "2026-06-14T07:35:44Z",
+              "excerpt": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans."
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "title": "AI overview",
+        "subtitle": "A guided snapshot of how today's edition was assembled.",
+        "generatedAt": "2026-06-14T11:42:30.902244Z",
+        "summary": "This edition turns 14 source signals into 10 readable stories. The main coverage areas are World, Sport, Business, Technology, Culture.",
+        "steps": [
+          "Collecting fresh RSS signals from the configured publishers.",
+          "Grouping related items by topic, keywords, timing and source overlap.",
+          "Extracting usable article context and high quality preview images where available.",
+          "Writing concise English story briefs with source transparency preserved."
+        ],
+        "highlights": [
+          "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
+        ],
+        "url": "overview.html"
+      },
+      "errors": [],
+      "mode": "source-synthesis"
+    },
+    {
+      "id": "2026-06-14-morning",
+      "slot": "morning",
+      "label": "Morning edition",
+      "generatedAt": "2026-06-14T11:42:26.694108Z",
+      "articleTarget": 10,
+      "articles": [
+        {
+          "id": "2026-06-14-morning-1-swiss-voters-reject-10-million-population-c0f654f8bb",
+          "title": "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-1-swiss-voters-reject-10-million-population-c0f654f8bb",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+          "body": [
+            "The story centers on swiss voters reject 10 million population cap, early projections say. The central point from the latest reporting is this: Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "The immediate detail is more concrete. Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal. Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for. The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform.",
+            "The surrounding context matters because it shows where the story may move next. The divisive vote risked putting the country's free movement agreement with the European Union in jeopardy. The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative. Prefer the Guardian on Google A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million concludes this weekend, amid warnings of devastating consequences for the country's economy if voters back the initiative.",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal.",
+            "Not all votes have been counted, but the current trend suggests 55% of participants voted against, to 45% for.",
+            "The proposal came from the right-wing Swiss People's Party , which has long campaigned on an anti-immigration platform."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/94f7/live/fd42fdf0-67df-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Swiss voters reject 10 million population cap, early projections say",
+              "url": "https://www.bbc.com/news/articles/c20ygjem17zo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:31:32Z",
+              "excerpt": "Not all votes have been counted, but the current trend suggests 55% of participants voted against the proposal."
+            },
+            {
+              "title": "Swiss wait to hear result of ballot on capping population at 10 million",
+              "url": "https://www.theguardian.com/world/2026/jun/13/swiss-wait-to-hear-result-of-ballot-on-capping-population-at-10-million",
+              "source": "The Guardian World",
+              "publishedAt": "2026-06-13T05:00:07Z",
+              "excerpt": "The far-right proposal would require the government to put restrictions in place to limit the population by 2050 A national ballot on an unprecedented far-right proposal to limit Switzerland's population to 10 million..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-2-world-cup-2026-scotland-react-to-first-vic-8230c403e3",
+          "title": "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-2-world-cup-2026-scotland-react-to-first-vic-8230c403e3",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+          "body": [
+            "The story centers on world cup 2026: scotland react to first victory in 36 years as australia beat.... The central point from the latest reporting is this: News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "The immediate detail is more concrete. News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games... Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver. Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Javier Garcia/Shutterstock View image in fullscreen Scotland are top of their group following the win over Haiti. Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver. The one act pulled past and future together on a night when Australia's next generation delivered one of their best World Cup victories, to start their 2026 campaign...",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games...",
+            "Group D also continued today, with Australia earning a 2-0 win over Turkey in Vancouver.",
+            "Key events 3h ago England camp hit by tornado warning 5h ago Preamble Scotland are top of their group following the win over Haiti."
+          ],
+          "image": "https://i.guim.co.uk/img/media/275a5f2cbb803261791be7e390b00eede0fd8cf4/0_645_3855_3082/master/3855.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=38ba98756108737b17981ad4f0c156d0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 3,
+          "sources": [
+            {
+              "title": "World Cup 2026: Scotland react to first victory in 36 years as Australia beat Turkey - live",
+              "url": "https://www.theguardian.com/football/live/2026/jun/14/world-cup-2026-news-scotland-react-to-first-world-cup-victory-in-36-years-as-australia-beat-turkey",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:26:27Z",
+              "excerpt": "News, buildup and reaction from North America Player guide | Bracketology | Wallchart | Mail us here How Group D stands after the opening games..."
+            },
+            {
+              "title": "Socceroos stun Turkey as Australia's youngsters shine in opening World Cup win",
+              "url": "https://www.theguardian.com/football/2026/jun/14/australia-socceroos-turkey-world-cup-2026-group-d-match-report",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T05:57:52Z",
+              "excerpt": "Nestory Irankunda ran to the corner flag like Tim Cahill, punching and ducking and weaving, after sending the Socceroos on their way to a stunning 2-0 upset victory over Turkey in Vancouver."
+            },
+            {
+              "title": "Clinical Australia upset Turkey in World Cup opener",
+              "url": "https://www.bbc.com/sport/football/videos/cgk6j2r6p7mo?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Sport",
+              "publishedAt": "2026-06-14T07:16:45Z",
+              "excerpt": "Watch highlights as Australia beat Turkey in their opening match, with 20-year-old Nestory Irankunda becoming the Socceroos's youngest ever World Cup goalscorer."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-3-lancs-v-kent-jordan-cox-joins-england-mid-c5d3fd914e",
+          "title": "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-3-lancs-v-kent-jordan-cox-joins-england-mid-c5d3fd914e",
+          "source": "DailySpark newsroom",
+          "topic": "Sport",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+          "body": [
+            "The story centers on lancs v kent, jordan cox joins england mid match and more. The central point from the latest reporting is this: Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1.",
+            "The immediate detail is more concrete. Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this morning at Stanley Park, 31-1. The sun is even straining to come out from net curtain clouds. Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores on the doors 3h ago Roundup: Stokes warms up as Durham run rings round Derbyshire 3h ago Preamble Nottinghamshire host Somerset at Trent Bridge.",
+            "The surrounding context matters because it shows where the story may move next. Photograph: Steve Poole/ProSports/Shutterstock View image in fullscreen Nottinghamshire host Somerset at Trent Bridge. Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten season, poor thing. IF anyone didn't know, Ajit Singh Dale and Luke Wells are out for the season.",
+            "For readers following sport, the important question is how the result, selection, injury news, or performance changes the next fixture and the wider competition picture.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire...",
+            "The sun is even straining to come out from net curtain clouds.",
+            "Key events 39m ago Ben Stokes and Lewis Moody at Chester le Street 50m ago Jordan Cox pulled out of Essex match to join England 1h ago Lancashire need 424 to win 3h ago Scores..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/5cef4dddc3819f73297819f4e5c5897cfe7fc907/225_0_2250_1800/master/2250.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=9cd23b143fc8e07bcd41bacf49e69f10",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 2,
+          "sources": [
+            {
+              "title": "Lancs v Kent, Jordan Cox joins England mid match and more: county cricket day three - live",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/14/notts-v-somerset-sussex-v-glamorgan-and-more-county-cricket-day-three-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-14T11:25:02Z",
+              "excerpt": "Updates from around the grounds after 11am (BST) start Women's T20 World Cup latest | Mail Tanya or comment BTL Time to go round the grounds on this sleepy Sunday, Lancashire making a better fist of things this..."
+            },
+            {
+              "title": "Stokes trains with Durham, Sussex's Coles makes double century: county cricket, day two - as it happened",
+              "url": "https://www.theguardian.com/sport/live/2026/jun/13/nottinghamshire-v-somerset-yorkshire-v-warwickshire-and-more-county-cricket-day-two-live",
+              "source": "The Guardian Sport",
+              "publishedAt": "2026-06-13T19:46:48Z",
+              "excerpt": "Ben Stokes warmed up with Durham, while James Coles made a glorious 224 for Sussex against Glamorgan Look up to see some spraying bails , Bohanon bowled by Keith Dudgeon for eight, he's having a bit of a rotten..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-4-trump-says-us-iran-deal-to-be-signed-on-su-85338519e9",
+          "title": "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-4-trump-says-us-iran-deal-to-be-signed-on-su-85338519e9",
+          "source": "DailySpark newsroom",
+          "topic": "World",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "The US president's comments come as Iran says an exact date has not been decided.",
+          "body": [
+            "The story centers on trump says us-iran deal to be signed on sunday as tehran casts doubt on timing. The central point from the latest reporting is this: The US president's comments come as Iran says an exact date has not been decided.",
+            "The immediate detail is more concrete. The US president's comments come as Iran says an exact date has not been decided. In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed. On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\".",
+            "The surrounding context matters because it shows where the story may move next. Before Trump's comments, Iranian foreign ministry spokesman Esmail Baghaei expressed caution over the timeline, saying: \"We will have to wait and see about the exact date of the signing of the memorandum of understanding, although it will not be tomorrow [Sunday].\" A delegation from Qatar, which has also mediated in the talks, arrived in Tehran on Sunday,...",
+            "The wider context matters because the first report may be followed by reaction, confirmation, and clearer consequences.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "The US president's comments come as Iran says an exact date has not been decided.",
+            "In a post on social media, Trump said the Strait of Hormuz, a key shipping route, would be \"open to all\" once the deal is agreed.",
+            "On Saturday, Pakistan, a key mediator, also said the deal was \"likely expected\" to be finalised within 24 hours and they were \"preparing for the electronic signing\"."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/a4ff/live/e53f0010-674d-11f1-8546-8f19e4fe30f4.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+              "url": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC World",
+              "publishedAt": "2026-06-14T11:23:36Z",
+              "excerpt": "The US president's comments come as Iran says an exact date has not been decided."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-5-elon-musk-and-co-may-relish-march-of-the-r-33ceeada30",
+          "title": "Business: Elon Musk and co may relish march of the robots but there must be AI boundaries in...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-5-elon-musk-and-co-may-relish-march-of-the-r-33ceeada30",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+          "body": [
+            "The story centers on elon musk and co may relish march of the robots but there must be ai boundaries in.... The central point from the latest reporting is this: As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The immediate detail is more concrete. As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood... A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human.",
+            "The surrounding context matters because it shows where the story may move next. While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood performer would.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic...",
+            "While D4YRL's tricks were exemplary, the august organisation decided \"he\" did not engage the audience's emotions as a flesh-and-blood...",
+            "A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently human."
+          ],
+          "image": "https://i.guim.co.uk/img/media/86b785bcb485b44d690a76a1665c352a7b9529e8/1081_38_5065_4055/master/5065.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f8cb41cd3d474060ba2b82bd942e56ee",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Elon Musk and co may relish march of the robots but there must be AI boundaries in the workplace | Heather Stewart",
+              "url": "https://www.theguardian.com/business/2026/jun/14/ai-technology-workplace-boundaries-elon-musk",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:03:07Z",
+              "excerpt": "As such technology advances quickly, firms should not lose sight of what qualities humans bring to jobs A robot magician called D4YRL was rejected as a member of the Magic Circle last week, for being insufficiently..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-6-have-i-been-influenced-or-is-this-actuall-a7da165825",
+          "title": "Technology: 'Have I been influenced, or is this actually me?' How personal taste fell out of...",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-6-have-i-been-influenced-or-is-this-actuall-a7da165825",
+          "source": "DailySpark newsroom",
+          "topic": "Technology",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+          "body": [
+            "The story centers on 'have i been influenced, or is this actually me?' how personal taste fell out of.... The central point from the latest reporting is this: Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "The immediate detail is more concrete. Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep. Meet the style rebels fighting back What are you into? What music, films, clothes, art, books - anything, really - do you actually like?",
+            "The surrounding context matters because it shows where the story may move next. Do you find these questions more difficult to answer than you would have done...",
+            "For readers following technology, the important question is whether the first report changes how companies, users, regulators, or developers behave next.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep.",
+            "Meet the style rebels fighting back What are you into?",
+            "What music, films, clothes, art, books - anything, really - do you actually like?"
+          ],
+          "image": "https://i.guim.co.uk/img/media/d36e785d8b943ad655c143990208db68068d93e0/52_0_4990_3993/master/4990.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=238b65bbefb41afbf8597d9b1273a3f4",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'Have I been influenced, or is this actually me?' How personal taste fell out of fashion",
+              "url": "https://www.theguardian.com/media/2026/jun/14/have-i-been-influenced-personal-taste-out-of-fashion-algorithm",
+              "source": "The Guardian Technology",
+              "publishedAt": "2026-06-14T11:00:42Z",
+              "excerpt": "Our favourite music, clothes and books used to be markers of individuality - but the algorithm has made us all sheep."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-7-people-start-connecting-the-dots-why-an-i-0c3b6713ff",
+          "title": "Business: 'People start connecting the dots'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-7-people-start-connecting-the-dots-why-an-i-0c3b6713ff",
+          "source": "DailySpark newsroom",
+          "topic": "Business",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+          "body": [
+            "The story centers on 'people start connecting the dots'. The central point from the latest reporting is this: Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "The immediate detail is more concrete. Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below. The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls. The view may be idyllic, but it belies the condition...",
+            "The surrounding context matters because it shows where the story may move next. Joanna Partridge in Skipton Sun 14 Jun 2026 13.00 CEST Last modified on Sun 14 Jun 2026 13.01 CEST Share Prefer the Guardian on Google From a high point on the hill, the North Yorkshire landscape unrolls below.",
+            "For readers following markets and companies, the important question is whether the first report turns into a broader financial, regulatory, or consumer story.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls...",
+            "The moorland above gives way to grassland, trees and then pasture, divided by the region's traditional dry stone walls.",
+            "The view may be idyllic, but it belies the condition..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/4e08eab35f79ff6f2b6bb80abded05b440a7f388/606_0_6500_5200/master/6500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6b9addbfe2c4fd2fbac498f58c098c29",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'People start connecting the dots': why an investment fund is rewilding a North Yorkshire estate",
+              "url": "https://www.theguardian.com/environment/2026/jun/14/why-investment-fund-rewilding-north-yorkshire-estate-rebalance-earth",
+              "source": "The Guardian Business",
+              "publishedAt": "2026-06-14T11:00:41Z",
+              "excerpt": "Rebalance Earth is investing in Broughton Sanctuary to generate financial, environmental and social returns From a high point on the hill, the North Yorkshire landscape unrolls below."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-8-atlantis-review-welsh-climate-crisis-drama-b3ddc17cd4",
+          "title": "Culture: Atlantis review",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-8-atlantis-review-welsh-climate-crisis-drama-b3ddc17cd4",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+          "body": [
+            "The story centers on atlantis review. The central point from the latest reporting is this: Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be...",
+            "The immediate detail is more concrete. Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable. Instead, as part of a process of \"managed retreat\",... Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd discovered the local council had decided that maintaining sea defences was longer be tenable.",
+            "The surrounding context matters because it shows where the story may move next. Instead, as part of a process of \"managed retreat\", this small coastal Welsh village would be abandoned to the sea by 2055.",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014,...",
+            "Instead, as part of a process of \"managed retreat\",...",
+            "Gareth Llyr Evans Sun 14 Jun 2026 12.50 CEST Last modified on Sun 14 Jun 2026 13.28 CEST Share Prefer the Guardian on Google I n 2014, residents of Fairbourne in Gwynedd..."
+          ],
+          "image": "https://i.guim.co.uk/img/media/40084421caff37eac3b9a37f441675af42a99219/793_0_4440_3552/master/4440.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTIucG5n&enable=upscale&s=74e9a5f66bab0f98bc0b161e7fa9fda0",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "Atlantis review - Welsh climate crisis drama is a parable for our times",
+              "url": "https://www.theguardian.com/stage/2026/jun/14/atlantis-review-theatr-clwyd-mold",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T10:50:53Z",
+              "excerpt": "Theatr Clwyd, Mold Emily White's lyrical, if contrived, play is based on a real coastal village whose residents are being made climate refugees by rising sea levels In 2014, residents of Fairbourne in Gwynedd..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-9-i-have-a-naughty-schoolboy-attitude-anish-f38b920222",
+          "title": "Culture: 'I have a naughty schoolboy attitude'",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-9-i-have-a-naughty-schoolboy-attitude-anish-f38b920222",
+          "source": "DailySpark newsroom",
+          "topic": "Culture",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+          "body": [
+            "The story centers on 'i have a naughty schoolboy attitude'. The central point from the latest reporting is this: As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers,...",
+            "The immediate detail is more concrete. As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting... Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs meeting room. The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades.",
+            "The surrounding context matters because it shows where the story may move next. When he's in town, everyone wants a piece (\"It's like The West Wing,\" says one gallery rep).",
+            "For readers following culture, the important question is how the story changes public attention, audience reaction, and the next stage of the work or event.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience...",
+            "Prefer the Guardian on Google I n Anish Kapoor's 3,100 sq metre studio complex in south London, photographers, assistants and gallery representatives gather in an upstairs...",
+            "The artist has a staff of 23 in London - 11 studio assistants, nine people in the offices, three stone masons at a yard in Battersea - and some have been with him for decades."
+          ],
+          "image": "https://i.guim.co.uk/img/media/9b2c6caf6c4a5066642d87aab983549969d618bc/1138_82_5960_4768/master/5960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2053ef01f6912d2517522476b523b029",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "'I have a naughty schoolboy attitude': Anish Kapoor reveals his latest epic creations",
+              "url": "https://www.theguardian.com/culture/2026/jun/14/anish-kapoor-hayward-gallery-interview",
+              "source": "The Guardian Culture",
+              "publishedAt": "2026-06-14T09:00:38Z",
+              "excerpt": "As he opens a career-spanning show in London, the Turner prize-winning artist gives us a private view of his giant studio and talks censorship, controversy and why disobedience is central to making great art In Anish..."
+            }
+          ]
+        },
+        {
+          "id": "2026-06-14-morning-10-how-forgotten-voyages-helped-track-el-nino-5525b98f80",
+          "title": "Science: How forgotten voyages helped track El Nino",
+          "subtitle": "What happened, why it matters, and what to watch next.",
+          "url": "article.html?id=2026-06-14-morning-10-how-forgotten-voyages-helped-track-el-nino-5525b98f80",
+          "source": "DailySpark newsroom",
+          "topic": "Science",
+          "publishedAt": "2026-06-14T11:42:26.694108Z",
+          "updatedAt": "2026-06-14T11:42:26.694108Z",
+          "summary": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+          "body": [
+            "The story centers on how forgotten voyages helped track el nino. The central point from the latest reporting is this: A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "The immediate detail is more concrete. A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans. Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe. Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as the Hidden East Yorkshire podcast has been hearing.",
+            "The surrounding context matters because it shows where the story may move next. \"There's a lot been on the news quite recently about El Nino and the effects the global impact of this warm water current in the Pacific might have on the world as it has in the past,\" says Dr Rob Robinson, an honorary research fellow at the University of Hull.",
+            "For readers following science, the important question is whether the finding, warning, or field report is confirmed by more evidence and translated into practical decisions.",
+            "What remains open is the follow-up: whether officials, companies, teams, or other people named in the story respond, and whether the first details hold once the next round of reporting arrives."
+          ],
+          "takeaways": [
+            "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans.",
+            "Several forecasts from national weather agencies suggest it could end up as one of the strongest ever recorded and drive more extreme weather around much of the globe.",
+            "Scientists are trying to understand how this will affect the planet in an era of climate change, but efforts to understand El Nino have been going on for more than a century, as..."
+          ],
+          "image": "https://ichef.bbci.co.uk/news/1024/branded_news/4e2d/live/b880d960-657f-11f1-9f01-693d064aea27.jpg",
+          "color": "#38bdf8",
+          "readingMinutes": 2,
+          "sourceCount": 1,
+          "sources": [
+            {
+              "title": "How forgotten voyages helped track El Nino",
+              "url": "https://www.bbc.com/news/articles/cnv9dlppmr7o?at_medium=RSS&at_campaign=rss",
+              "source": "BBC Science",
+              "publishedAt": "2026-06-14T07:35:44Z",
+              "excerpt": "A century ago, research ship William Scoresby left Hull for pioneering work in the southern oceans."
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "title": "AI overview",
+        "subtitle": "A guided snapshot of how today's edition was assembled.",
+        "generatedAt": "2026-06-14T11:42:26.694108Z",
+        "summary": "This edition turns 14 source signals into 10 readable stories. The main coverage areas are World, Sport, Business, Technology, Culture.",
+        "steps": [
+          "Collecting fresh RSS signals from the configured publishers.",
+          "Grouping related items by topic, keywords, timing and source overlap.",
+          "Extracting usable article context and high quality preview images where available.",
+          "Writing concise English story briefs with source transparency preserved."
+        ],
+        "highlights": [
+          "World: Swiss voters reject 10 million population cap, early projections say from multiple sources",
+          "Sport: World Cup 2026: Scotland react to first victory in 36 years as Australia beat... from multiple sources",
+          "Sport: Lancs v Kent, Jordan Cox joins England mid match and more from multiple sources",
+          "World: Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
+        ],
+        "url": "overview.html"
+      },
+      "errors": [],
+      "mode": "source-synthesis"
+    }
+  ],
+  "engine": {
+    "mode": "source-synthesis",
+    "note": "English stories assembled from RSS feeds and available source-page context."
+  }
+}

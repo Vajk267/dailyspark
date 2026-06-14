@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DailySpark</title>
+    <meta
+      name="description"
+      content="A frequently updated English news portal with original story pages and transparent source links."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260614-ticker-clean">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="DailySpark home">
+          <img class="brand-logo" src="assets/dailyspark-logo.svg" alt="DailySpark">
+        </a>
+        <div class="nav-topics" aria-label="Sections">
+          <a href="#stories">World</a>
+          <a href="#stories">Business</a>
+          <a href="#stories">Technology</a>
+          <a href="#stories">Science</a>
+          <a href="#stories">Sport</a>
+        </div>
+        <div class="top-actions">
+          <button class="theme-button" data-theme-toggle type="button" aria-label="Switch theme" title="Switch theme">
+            <i data-lucide="sun" aria-hidden="true"></i>
+            <span>Light</span>
+          </button>
+          <button class="icon-button" id="refreshView" type="button" aria-label="Reload data" title="Reload data">
+            <i data-lucide="refresh-cw" aria-hidden="true"></i>
+          </button>
+          <a class="source-link" href="#sources">
+            <i data-lucide="rss" aria-hidden="true"></i>
+            <span>Sources</span>
+          </a>
+        </div>
+      </nav>
+      <div class="breaking-strip" aria-label="Latest DailySpark headlines">
+        <span class="breaking-label">Live sparks</span>
+        <div class="ticker-mask">
+          <div class="ticker-track" id="headlineTicker"></div>
+        </div>
+      </div>
+
+      <section class="hero" id="top">
+        <div class="hero-media" aria-hidden="true">
+          <div class="pulse-grid"></div>
+          <div class="signal-line line-a"></div>
+          <div class="signal-line line-b"></div>
+          <div class="signal-line line-c"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Daily brief, with sources</p>
+          <h1 class="sr-only">DailySpark</h1>
+          <img class="hero-wordmark" src="assets/dailyspark-logo.svg" alt="DailySpark">
+          <p>
+            Edited stories built from several trusted signals. DailySpark compares related reports,
+            extracts the important facts, and presents each story in its own reading experience.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#stories">
+              <i data-lucide="newspaper" aria-hidden="true"></i>
+              <span>Today's stories</span>
+            </a>
+            <a class="system-pill" href="overview.html" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span id="engineMode">AI overview</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="status-band" aria-live="polite">
+        <div>
+          <span class="label">Last update</span>
+          <strong id="lastUpdated">Loading...</strong>
+        </div>
+        <div>
+          <span class="label">Current edition</span>
+          <strong id="editionTitle">-</strong>
+        </div>
+        <div>
+          <span class="label">Stories</span>
+          <strong id="articleCount">0</strong>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Filters">
+        <div class="tabs" id="editionTabs" aria-label="Editions"></div>
+        <div class="filters" id="categoryFilters" aria-label="Topics"></div>
+      </section>
+      <section class="front-page" id="stories" aria-label="Featured stories">
+        <aside class="latest-rail" aria-label="Latest stories">
+          <h2>Latest<br>Stories</h2>
+          <div id="latestRail"></div>
+          <a class="see-more" href="#moreStories">See more</a>
+        </aside>
+        <div class="front-main">
+          <section class="lead-grid" id="leadGrid" aria-label="Lead story"></section>
+          <section class="article-grid" id="articleGrid" aria-label="Featured stories"></section>
+        </div>
+      </section>
+
+      <section class="more-section" id="moreStories" aria-label="More stories">
+        <h2>More from DailySpark</h2>
+        <div class="more-grid" id="moreGrid"></div>
+      </section>
+
+      <section class="source-band" id="sources">
+        <div>
+          <p class="eyebrow">Transparent background</p>
+          <h2>Source model</h2>
+          <p>
+            DailySpark does not copy full source articles. It uses RSS metadata and available source-page context
+            to produce original summaries, while keeping the original links at the end of each story.
+          </p>
+        </div>
+        <ul id="sourceList"></ul>
+      </section>
+    </main>
+
+    <template id="articleTemplate">
+      <article class="article-card" tabindex="0" role="link">
+        <div class="image-link">
+          <img alt="" loading="lazy">
+          <span class="topic-pill"></span>
+          <span class="source-pill"><i data-lucide="layers-3" aria-hidden="true"></i><span></span></span>
+        </div>
+        <div class="article-body">
+          <div class="meta"></div>
+          <h3><span class="title-button"></span></h3>
+          <p></p>
+          <div class="card-footer">
+            <span class="read-time"></span>
+            <span class="open-hint"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
+

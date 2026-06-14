@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 150" role="img" aria-labelledby="title desc">
+  <title id="title">DailySpark</title>
+  <desc id="desc">DailySpark wordmark logo with a spark inside the name.</desc>
+  <defs>
+    <linearGradient id="sparkGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.48" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.22 0 0 0 0 0.74 0 0 0 0 0.97 0 0 0 .9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="8" y="12" width="664" height="126" rx="18" fill="#050816"/>
+  <rect x="8" y="12" width="664" height="126" rx="18" fill="none" stroke="url(#sparkGradient)" stroke-width="5"/>
+  <path d="M74 27 L98 68 L145 72 L108 99 L120 144 L77 118 L37 143 L48 99 L13 71 L58 68 Z" fill="url(#sparkGradient)" filter="url(#glow)" opacity=".95"/>
+  <text x="154" y="101" fill="#f8fafc" font-family="Arial Black, Impact, Arial, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">Daily</text>
+  <text x="340" y="101" fill="url(#sparkGradient)" font-family="Arial Black, Impact, Arial, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">Spark</text>
+  <path d="M328 37 l11 24 26 3-20 16 6 26-23-14-22 14 6-26-20-16 25-3z" fill="#e0f2fe"/>
+  <text x="158" y="126" fill="#94a3b8" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="4">DAILY NEWSROOM</text>
+</svg>

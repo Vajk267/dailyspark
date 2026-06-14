@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI overview | DailySpark</title>
+    <meta name="description" content="Animated AI overview of the current DailySpark edition.">
+    <link rel="stylesheet" href="styles.css?v=20260614-ticker-clean">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="theme.js" defer></script>
+  </head>
+  <body class="article-page">
+    <header class="article-topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/dailyspark-logo.svg" alt="DailySpark">
+      </a>
+      <div class="top-actions">
+        <button class="theme-button" data-theme-toggle type="button" aria-label="Switch theme" title="Switch theme">
+          <i data-lucide="sun" aria-hidden="true"></i>
+          <span>Light</span>
+        </button>
+        <a class="source-link" href="index.html#stories">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+          <span>Back to stories</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="overview-shell">
+      <section class="overview-stage">
+        <div class="overview-summary">
+          <p class="eyebrow">Collecting signals</p>
+          <h1 id="overviewTitle">AI overview</h1>
+          <p id="overviewSummary">Loading the story of this edition...</p>
+        </div>
+
+        <div class="overview-grid" id="overviewSteps" aria-label="Overview process"></div>
+        <div class="overview-list" id="overviewHighlights"></div>
+      </section>
+    </main>
+
+    <script src="overview.js" type="module"></script>
+  </body>
+</html>
