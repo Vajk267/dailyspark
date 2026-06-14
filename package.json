@@ -6,9 +6,13 @@
   "scripts": {
     "build": "node scripts/build-static.mjs",
     "preview": "python -m http.server 8000",
-    "netlify:preview-news": "netlify functions:invoke preview-news"
+    "netlify:preview-news": "netlify functions:invoke preview-news",
+    "tiktok:drafts": "node scripts/generate-tiktok-drafts.mjs"
   },
   "dependencies": {
     "@netlify/blobs": "^10.7.9"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
   }
 }
