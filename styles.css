@@ -1606,10 +1606,15 @@ main {
 
 .article-card {
   animation: cardIn 420ms ease both;
-  background: #ffffff;
+  background: #07111f;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  color: #f7fbff;
+}
+
+:root[data-theme="light"] .article-card {
+  background: #ffffff;
   color: #000000;
 }
 
@@ -1678,16 +1683,27 @@ main {
 }
 
 .front-card .article-body {
+  background:
+    linear-gradient(135deg, #07111f 0%, #0d1b2d 66%, #10283a 100%);
   padding: 20px 22px 24px;
+}
+
+:root[data-theme="light"] .front-card .article-body {
+  background: #ffffff;
 }
 
 .front-card .meta,
 .more-tile .meta {
-  color: #5a5a5a;
+  color: #9fb2c9;
   font-size: 0.74rem;
   font-weight: 950;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+:root[data-theme="light"] .front-card .meta,
+:root[data-theme="light"] .more-tile .meta {
+  color: #5a5a5a;
 }
 
 .front-card h3 {
@@ -1696,6 +1712,11 @@ main {
 
 .front-card p,
 .more-tile p {
+  color: #c7d5e5;
+}
+
+:root[data-theme="light"] .front-card p,
+:root[data-theme="light"] .more-tile p {
   color: #171717;
 }
 
@@ -1713,6 +1734,10 @@ main {
 .open-hint {
   background: transparent;
   border: 0;
+  color: #f7fbff;
+}
+
+:root[data-theme="light"] .open-hint {
   color: #000000;
 }
 
@@ -1747,7 +1772,13 @@ main {
 }
 
 .more-tile .article-body {
+  background:
+    linear-gradient(135deg, #07111f 0%, #0d1b2d 66%, #10283a 100%);
   padding: 17px;
+}
+
+:root[data-theme="light"] .more-tile .article-body {
+  background: #ffffff;
 }
 
 .more-tile h3 {
@@ -1756,13 +1787,23 @@ main {
 
 .front-card .title-button,
 .more-tile .title-button {
-  color: #050505;
+  color: #f7fbff;
   opacity: 1;
   text-shadow: none;
 }
 
 .front-card .title-button:hover,
 .more-tile .title-button:hover {
+  color: #7dd3fc;
+}
+
+:root[data-theme="light"] .front-card .title-button,
+:root[data-theme="light"] .more-tile .title-button {
+  color: #050505;
+}
+
+:root[data-theme="light"] .front-card .title-button:hover,
+:root[data-theme="light"] .more-tile .title-button:hover {
   color: #075985;
 }
 
@@ -1778,11 +1819,21 @@ main {
 
 .front-card h3,
 .more-tile h3 {
-  color: #050505;
+  color: #f7fbff;
 }
 
 .front-card .read-time,
 .more-tile .read-time {
+  color: #67d7ff;
+}
+
+:root[data-theme="light"] .front-card h3,
+:root[data-theme="light"] .more-tile h3 {
+  color: #050505;
+}
+
+:root[data-theme="light"] .front-card .read-time,
+:root[data-theme="light"] .more-tile .read-time {
   color: #075985;
 }
 
